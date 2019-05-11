@@ -1,0 +1,9 @@
+\\vmware-host\Shared Folders\Desktop\Valerio_Sky_DBSreview\Valerio_Sky_DBSreview\bin\Debug\Valerio_Sky_DBSreview.exe.config
+\\vmware-host\Shared Folders\Desktop\Valerio_Sky_DBSreview\Valerio_Sky_DBSreview\bin\Debug\Valerio_Sky_DBSreview.exe
+\\vmware-host\Shared Folders\Desktop\Valerio_Sky_DBSreview\Valerio_Sky_DBSreview\bin\Debug\Valerio_Sky_DBSreview.pdb
+\\vmware-host\Shared Folders\Desktop\Valerio_Sky_DBSreview\Valerio_Sky_DBSreview\bin\Debug\MySql.Data.dll
+\\vmware-host\Shared Folders\Desktop\Valerio_Sky_DBSreview\Valerio_Sky_DBSreview\obj\Debug\Valerio_Sky_DBSreview.csprojAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\Valerio_Sky_DBSreview\Valerio_Sky_DBSreview\obj\Debug\Valerio_Sky_DBSreview.csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Desktop\Valerio_Sky_DBSreview\Valerio_Sky_DBSreview\obj\Debug\Valerio_Sky_DBSreview.csproj.CopyComplete
+\\vmware-host\Shared Folders\Desktop\Valerio_Sky_DBSreview\Valerio_Sky_DBSreview\obj\Debug\Valerio_Sky_DBSreview.exe
+\\vmware-host\Shared Folders\Desktop\Valerio_Sky_DBSreview\Valerio_Sky_DBSreview\obj\Debug\Valerio_Sky_DBSreview.pdb
