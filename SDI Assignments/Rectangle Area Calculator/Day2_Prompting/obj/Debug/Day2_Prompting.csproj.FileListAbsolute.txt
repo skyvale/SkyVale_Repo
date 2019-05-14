@@ -1,0 +1,7 @@
+C:\Users\Skylar Valerio\source\repos\Day2_Prompting\Day2_Prompting\bin\Debug\Day2_Prompting.exe.config
+C:\Users\Skylar Valerio\source\repos\Day2_Prompting\Day2_Prompting\bin\Debug\Day2_Prompting.exe
+C:\Users\Skylar Valerio\source\repos\Day2_Prompting\Day2_Prompting\bin\Debug\Day2_Prompting.pdb
+C:\Users\Skylar Valerio\source\repos\Day2_Prompting\Day2_Prompting\obj\Debug\Day2_Prompting.csprojAssemblyReference.cache
+C:\Users\Skylar Valerio\source\repos\Day2_Prompting\Day2_Prompting\obj\Debug\Day2_Prompting.csproj.CoreCompileInputs.cache
+C:\Users\Skylar Valerio\source\repos\Day2_Prompting\Day2_Prompting\obj\Debug\Day2_Prompting.exe
+C:\Users\Skylar Valerio\source\repos\Day2_Prompting\Day2_Prompting\obj\Debug\Day2_Prompting.pdb
