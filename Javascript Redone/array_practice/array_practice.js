@@ -1,8 +1,11 @@
 
+
 /* Skylar Valerio
 * 05.19.19
 * C# to JS - Array Practice
 */
+
+alert("Since this assignment doesn't require any prompts, it is all done in console logs.");
 
 // declare the two arrays
 let firstArray = [34, 20, 91, 49];
@@ -30,14 +33,14 @@ console.log("The average of the second array is " + secondAvr + "!");
 
 // create a third array that is created from the combined values of the first and second arrays
 let thirdArray = [firstArray[0] + secondArray[0],
-                  firstArray[1] + secondArray[1],
-                  firstArray[2] + secondArray[2],
-                  firstArray[3] + secondArray[3],];
+    firstArray[1] + secondArray[1],
+    firstArray[2] + secondArray[2],
+    firstArray[3] + secondArray[3],];
 
 // print out each element value of the third array
-console.log("The first element in the third array is " + thirdArray[0] + "!")     
-console.log("The second element in the third array is " + thirdArray[1] + "!")                 
-console.log("The third element in the third array is " + thirdArray[2] + "!")                 
-console.log("The fourth element in the third array is " + thirdArray[3] + "!")                 
+console.log("The first element in the third array is " + thirdArray[0] + "!")
+console.log("The second element in the third array is " + thirdArray[1] + "!")
+console.log("The third element in the third array is " + thirdArray[2] + "!")
+console.log("The fourth element in the third array is " + thirdArray[3] + "!")
 
 
