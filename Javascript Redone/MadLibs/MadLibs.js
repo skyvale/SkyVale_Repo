@@ -1,4 +1,5 @@
 
+
 /* Skylar Valerio
 * 05.19.19
 * C# to Javascript - MadLibs
@@ -43,12 +44,19 @@ while (randomNum === ""){
 
 
 // put the user input into the madlibs story
-alert("\nYou were walking through the woods one day when you saw them-- " + name + 
-      ".\nThey looked "+ adjective +
-      " and when they turned around, you saw they were devouring " + foodItem +
-      ".\nBehind them, they had a pile of " + randomNum +
-      " more " + foodItem + ".\nIt probably cost them at least $" + cost +
-      ", especially since it was " + yearNumber + ".\n");
+alert("\nYou were walking through the woods one day when you saw them-- " + name +
+    ".\nThey looked "+ adjective +
+    " and when they turned around, you saw they were devouring " + foodItem +
+    ".\nBehind them, they had a pile of " + randomNum +
+    " more " + foodItem + ".\nIt probably cost them at least $" + cost +
+    ", especially since it was " + yearNumber + ".\n");
+
+console.log("\nYou were walking through the woods one day when you saw them-- " + name +
+    ".\nThey looked "+ adjective +
+    " and when they turned around, you saw they were devouring " + foodItem +
+    ".\nBehind them, they had a pile of " + randomNum +
+    " more " + foodItem + ".\nIt probably cost them at least $" + cost +
+    ", especially since it was " + yearNumber + ".\n");
 
 
 
