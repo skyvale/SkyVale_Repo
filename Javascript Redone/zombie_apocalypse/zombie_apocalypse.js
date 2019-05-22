@@ -22,7 +22,9 @@ let days = 8;
 
 // greet user and explain the program
 alert("Oh, wow. There's a zombie attack at Full Sail..." +
-     "\nLet's figure out how many zombies we'll be dealing with at the end of 8 days.");
+    "\nLet's figure out how many zombies we'll be dealing with at the end of 8 days.");
+
+console.log("The apocalypse starts.");
 
 for (var i = 0; i <= days; i++){
     // zombies go bite people and create new zombies
@@ -30,9 +32,11 @@ for (var i = 0; i <= days; i++){
     // new zombies join the zombie horde
     numZombies += newZombies;
     //end of the day - report to the public
-    alert("There are " + numZombies + " by Day " + i + "!");
-
+    console.log("There are " + numZombies + " by Day " + i + "!");
 }
+
+alert("After 8 days, there are " +numZombies);
+
 
 alert("How many days will it take to get to one million zombies?");
 
@@ -46,7 +50,7 @@ while (zombieHorde <= 1000000){
     // add bittenPeople to the zombieHorde
     zombieHorde =+ bittenPeople;
     // report to the public
-    alert("On day " + numDays + " there are " + zombieHorde + " zombies!");
+    console.log("On day " + numDays + " there are " + zombieHorde + " zombies!");
 
     if (zombieHorde >= 1000000){
         // if there are a million zombies, dont go on to the next day
@@ -57,3 +61,7 @@ while (zombieHorde <= 1000000){
     numDays++;
 
 }
+
+alert("On day " + numDays + " there are " + zombieHorde + " zombies");
+
+console.log("\nEnd of program.");
