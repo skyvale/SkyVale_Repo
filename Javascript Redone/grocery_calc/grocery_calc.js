@@ -1,10 +1,11 @@
 
+
 /* Skylar Valerio
 * 05.19.19
 * C# to JS - Grocery Calculator
 */
 
-// this program calculates how much the user will spend on grcoeries, including tax
+// this program calculates how much the user will spend on groceries, including tax
 alert("This is your personal grocery calculator!");
 
 // get the apple information
@@ -58,8 +59,14 @@ let taxAmt = totalPrice * actualTax;
 let finalAmount = totalPrice + taxAmt;
 
 // alert the user to each price and the final total price with/without tax
-alert("The price for " + appleAmt + " apples is $" + appleTotal + 
-      ".\nThe price for " + steakAmt + " steaks is $" + steakTotal +
-      ".\nThe price for " + icecreamAmt + " icecreams is $" + icecreamTotal +
-      ".\nThe total price without tax is $" + totalPrice + 
-      "!\nThe total price with tax included is $" + finalAmount + "!");
+alert("The price for " + appleAmt + " apples is $" + appleTotal +
+    ".\nThe price for " + steakAmt + " steaks is $" + steakTotal +
+    ".\nThe price for " + icecreamAmt + " icecreams is $" + icecreamTotal +
+    ".\nThe total price without tax is $" + totalPrice +
+    "!\nThe total price with tax included is $" + finalAmount + "!");
+
+console.log("The price for " + appleAmt + " apples is $" + appleTotal +
+    ".\nThe price for " + steakAmt + " steaks is $" + steakTotal +
+    ".\nThe price for " + icecreamAmt + " icecreams is $" + icecreamTotal +
+    ".\nThe total price without tax is $" + totalPrice +
+    "!\nThe total price with tax included is $" + finalAmount + "!");
