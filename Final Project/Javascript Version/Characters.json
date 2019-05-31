@@ -1,0 +1,17 @@
+{
+  "characters": [
+    {
+      "character": [
+        {
+          "name": "Default",
+          "gender": "Male",
+          "age": 20,
+          "eyeCol": "Brown"
+
+        }
+    ]
+  }
+  ]
+
+
+}

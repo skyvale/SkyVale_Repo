@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src = "Project.js" type = "text/javascript"></script>
+    <script type = text/javascript src = "https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type = "text/javascript">
+        $(document).ready(function(){
+            $.ajax({
+                type: 'GET',
+                url: 'Characters.json',
+                dataType: 'json',
+                success: jsonParser
+            });
+        });
+
+        function jsonParser(json){
+            $.getJSON('Characters.json', function(data) {
+                $.each(data.characters.character, function (k, v) {
+                    var name = v.name;
+                    var age = v.age;
+                    var gender = v.gender;
+                    var eyeCol = v.eyeCol;
+                });
+            });
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
