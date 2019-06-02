@@ -17,11 +17,7 @@ namespace Valerio_PortfolioII_Final
         public Menu()
         {
 
-            Title = "   ____   _                                       _                   " +
-                    "  / ___| | |__      __ _   _ __     __ _     ___ | |_     ___    _ __   " +
-                    " | |     | '_ \\   / _` | | '__ |  / _` |  / __  |  __|  / _ \\ | '__|" +
-                    " | |___  | | | |  | (_| | | |     | (_| | | (__  | |_   |  __/  | |     " +
-                    "  \\____| |_| |_|   \\__,_| |_|      \\__,_| \\___|  \\__|   \\___|  |_|   ";  
+            Title = "Character Creator";
 ;
 
             _items = new List<string>();
@@ -32,11 +28,7 @@ namespace Valerio_PortfolioII_Final
         public Menu(params string[] items)
         {
 
-            Title = "   ____   _                                       _                   " +
-                    "  / ___| | |__      __ _   _ __     __ _     ___ | |_     ___    _ __   " +
-                    " | |     | '_ \\   / _` | | '__ |  / _` |  / __  |  __|  / _ \\ | '__|" +
-                    " | |___  | | | |  | (_| | | |     | (_| | | (__  | |_   |  __/  | |     " +
-                    "  \\____| |_| |_|   \\__,_| |_|      \\__,_| \\___|  \\__|   \\___|  |_|   ";
+            Title = "Character Creator";
 
             _items = items.ToList();
 

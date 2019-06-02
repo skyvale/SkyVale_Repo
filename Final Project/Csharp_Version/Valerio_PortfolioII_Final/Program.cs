@@ -100,7 +100,7 @@ namespace Valerio_PortfolioII_Final
                 case "2":
                 case "delete character":
                     {
-
+                        Delete();
                     }break;
                 case "3":
                 case "display characters":
@@ -149,6 +149,7 @@ namespace Valerio_PortfolioII_Final
 
             // create the new character
             Character newCharacter = new Character(inputName, inputGender, inputAge, inputEyeCol);
+            _characterList.Add(newCharacter);
 
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Green;
@@ -173,6 +174,47 @@ namespace Valerio_PortfolioII_Final
             Selection();
         }
 
+
+
+        private void Delete()
+        {
+            Console.Clear();
+
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("\nDelete a Character\n");
+            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.WriteLine("---------------------------------\n");
+
+            string inputName = Validation.ValidateString("\nWhich character would you like to delete?");
+
+
+            if (_characterList.Exists(Character => Character.Name == inputName))
+            {
+                // this finds the character by name and removes them from the list
+                Character removeChara = _characterList.Find(Character => Character.Name == inputName);
+                _characterList.Remove(removeChara);
+
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.WriteLine($"\n{inputName} has been deleted!");
+                Console.ForegroundColor = ConsoleColor.Gray;
+
+                Console.WriteLine("\nPress any key to return to the menu...");
+                Console.ReadKey();
+                Selection();
+
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.WriteLine("\nThat character does not exist in the system.\n");
+                Console.ForegroundColor = ConsoleColor.Gray;
+
+                Console.ReadKey();
+                Delete();
+
+            }
+
+        }
 
 
         private void Display()
