@@ -1,0 +1,133 @@
+
+public ClassName (parameters) { }
+
+class Box
+{
+    // properties of the Box class go here
+    // member variables
+    double mLength;
+    double mWidth;
+    double mHeight;
+    string mColor;
+
+    public Box (double _width, double _length, double _height, string _color)
+    {
+        // you don't need to put 'double' or 'string' since they are already declared, and we are just redefining them
+        mWidth = _width;
+        mLength = _length;
+        mHeight = _height;
+        mColor = _color;
+
+    }
+
+    public Box (double _width, double _length, double _height)
+    {
+        mWidth = _width;
+        mLength = _length;
+        mHeight = _height;
+        mColor = "grey";
+
+    }
+
+
+
+
+    // GETTERS
+    // getters should have validation so that not everyone can just get it
+
+    // you have to do this one at a time for each member variable
+    public double GetWidth () 
+    {
+        // it has access to mWidth because they methods are still in the same class of Box
+        return mWidth;
+
+    }
+
+    public double GetLength ()
+    {
+        return mLength;
+
+    }
+
+    public double GetHeight () 
+    {
+        return mHeight;
+
+    }
+
+    public string GetColor ()
+    {
+        return mColor;
+
+    }
+
+
+
+
+    // SETTERS & MUTATORS
+    // setters should also have validation so that not everyone can mess with it
+
+    public void SetLength (double _length)
+    {
+        if (_length > 0 )
+        {
+        mLength = _length;
+
+        }
+    }
+
+
+    public void SetHeight (double _height)
+    {
+        mHeight = _height;
+
+    }
+    
+    public void SetWidth (double _width)
+    {
+        mWidth = _width;
+
+    }
+  
+    public void SetColor (string _color)
+    {
+        mColor = _color;
+
+    }
+
+    
+
+    // METHODS FOR BOX
+
+    public double Volume ( )
+    {
+        double vol = mWidth * mHeight * mLength;
+    }
+
+  
+  
+    
+}   
+
+
+        // MAIN PROGRAM
+
+        Box myCube = new Box (7, 10, 2, "blue");
+
+        Box myOtherCube = new Box (8, 4, 20, "green");
+
+        Box greyCube = (17, 3, 5);
+
+        Console.WriteLine(myCube, mWidth);
+
+
+
+        Console.WriteLine(myCube.GetWidth());
+
+        // this will set the length from '4' to '10'
+        myOtherCube.SetLength(10);
+
+        double results = myCube.Volume();
+        Console.WriteLine(results);
+
+

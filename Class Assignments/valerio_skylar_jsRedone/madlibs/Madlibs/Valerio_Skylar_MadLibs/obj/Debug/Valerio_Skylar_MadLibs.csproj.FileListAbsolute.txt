@@ -1,0 +1,7 @@
+Z:\Documents\Visual Studio\Valerio_Skylar_MadLibs\Valerio_Skylar_MadLibs\bin\Debug\Valerio_Skylar_MadLibs.exe.config
+Z:\Documents\Visual Studio\Valerio_Skylar_MadLibs\Valerio_Skylar_MadLibs\bin\Debug\Valerio_Skylar_MadLibs.exe
+Z:\Documents\Visual Studio\Valerio_Skylar_MadLibs\Valerio_Skylar_MadLibs\bin\Debug\Valerio_Skylar_MadLibs.pdb
+Z:\Documents\Visual Studio\Valerio_Skylar_MadLibs\Valerio_Skylar_MadLibs\obj\Debug\Valerio_Skylar_MadLibs.csprojAssemblyReference.cache
+Z:\Documents\Visual Studio\Valerio_Skylar_MadLibs\Valerio_Skylar_MadLibs\obj\Debug\Valerio_Skylar_MadLibs.csproj.CoreCompileInputs.cache
+Z:\Documents\Visual Studio\Valerio_Skylar_MadLibs\Valerio_Skylar_MadLibs\obj\Debug\Valerio_Skylar_MadLibs.exe
+Z:\Documents\Visual Studio\Valerio_Skylar_MadLibs\Valerio_Skylar_MadLibs\obj\Debug\Valerio_Skylar_MadLibs.pdb
