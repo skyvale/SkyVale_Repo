@@ -10,6 +10,8 @@ namespace valerio_finalProject_P2
     {
         static void Main(string[] args)
         {
+            // call in the main program
+            Assignment assignment = new Assignment();
         }
     }
 }

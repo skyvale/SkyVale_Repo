@@ -18,11 +18,7 @@ namespace valerio_finalProject_P2
         public Menu()
         {
 
-            Title = "\n  _____           _   _     ____            _   _ " +
-                    "\n |  ___|  _   _  | | | |   / ___|    __ _  (_) | |  " +
-                    "\n | |_    | | | | | | | |   \\___ \\   / _` | | | | |" +
-                    "\n |  _|   | |_| | | | | |    ___) | | (_| | | | | |" +
-                    "\n |_|      \\__,_| |_| |_|   |____/   \\__,_| |_| |_|";
+            Title = "\nCharacter Creator";
 
             _items = new List<string>();
         }
@@ -32,11 +28,7 @@ namespace valerio_finalProject_P2
         public Menu(params string[] items)
         {
 
-            Title = "\n  _____           _   _     ____            _   _ " +
-                    "\n |  ___|  _   _  | | | |   / ___|    __ _  (_) | |  " +
-                    "\n | |_    | | | | | | | |   \\___ \\   / _` | | | | |" +
-                    "\n |  _|   | |_| | | | | |    ___) | | (_| | | | | |" +
-                    "\n |_|      \\__,_| |_| |_|   |____/   \\__,_| |_| |_|";
+            Title = "\nCharacter Creator";
 
             _items = items.ToList();
 
@@ -53,7 +45,7 @@ namespace valerio_finalProject_P2
 
 
         // displays title and things
-        public void Display()
+        public void FullDisplay()
         {
 
             Console.ForegroundColor = ConsoleColor.Cyan;
@@ -63,9 +55,18 @@ namespace valerio_finalProject_P2
 
             for (int i = 0; i < _items.Count; i++)
             {
-                Console.WriteLine($"{i + 1}: {_items[i]}");
+                Console.WriteLine($"[{i + 1}] {_items[i]}");
             }
 
+        }
+
+        // displays just the list
+        public void Display()
+        {
+            for (int i = 0; i < _items.Count; i++)
+            {
+                Console.WriteLine($"[{i + 1}] {_items[i]}");
+            }
         }
 
     }
