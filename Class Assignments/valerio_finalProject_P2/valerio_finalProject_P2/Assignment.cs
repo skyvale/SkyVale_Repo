@@ -28,7 +28,6 @@ namespace valerio_finalProject_P2
             if (File.Exists(_directory + _file))
             {
                 Console.WriteLine("File exists.\n");
-                Console.ReadKey();
                 Console.Clear();
 
             }
