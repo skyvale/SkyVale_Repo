@@ -1,20 +1,26 @@
-# Portfolio II
+# Welcome to the Repo
 
-For my final project in Portfolio II, I decided to make a Character Creator. In RPGs, characters have different classes that help determine the stats of each character (ex. A rogue character would have have speed and attack whereas a knight character would have high health and defense, etc.)
+This is my repository that I am using while I am at Full Sail. 
 
-My program would allow the user to create a character and choose a class for that character-- then the program would generate stats based on the chosen class.
-
-
+Everything in this repo is for school. I have a separate repo for my own personal projects, which I will link later.
 
 --
 
-### Project Plans
+### Current Class(es)
+```
+VFW
+```
 
-- [ ] Create basic program using C# (min 3 character classes, min 6 stats)
+__Currently working on: *CE04 + CE05*__
 
-- [ ] Re-create basic program using JavaScript
-- [ ] Add static visual assets using HTML/CSS (CodePen)
-- [ ] Expand the code (possibly add more complex stats, more classes). 
-- [ ] Add the option to personalize the characters with additional visual assets.
-- [ ] Add animations.
+CE04
+- [ ] finish debugging CE04
+
+CE05
+- [ ] research 'radio buttons'
+- [ ] build the frame of the forms 
+- [ ] sketch a flow chart of the code
+- [ ] finish the ListView/Main form
+- [ ] finish the User Input Dialog
+- [ ] finish the Events
 
