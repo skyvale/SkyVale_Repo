@@ -1,0 +1,12 @@
+C:\Users\skyla\OneDrive\Desktop\Visual Studio\VFW_Day4Notes\bin\Debug\VFW_Day4Notes.exe.config
+C:\Users\skyla\OneDrive\Desktop\Visual Studio\VFW_Day4Notes\bin\Debug\VFW_Day4Notes.exe
+C:\Users\skyla\OneDrive\Desktop\Visual Studio\VFW_Day4Notes\bin\Debug\VFW_Day4Notes.pdb
+C:\Users\skyla\OneDrive\Desktop\Visual Studio\VFW_Day4Notes\obj\Debug\VFW_Day4Notes.csprojAssemblyReference.cache
+C:\Users\skyla\OneDrive\Desktop\Visual Studio\VFW_Day4Notes\obj\Debug\VFW_Day4Notes.DataEntryForm.resources
+C:\Users\skyla\OneDrive\Desktop\Visual Studio\VFW_Day4Notes\obj\Debug\VFW_Day4Notes.ListBoxForm.resources
+C:\Users\skyla\OneDrive\Desktop\Visual Studio\VFW_Day4Notes\obj\Debug\VFW_Day4Notes.ListViewForm.resources
+C:\Users\skyla\OneDrive\Desktop\Visual Studio\VFW_Day4Notes\obj\Debug\VFW_Day4Notes.Properties.Resources.resources
+C:\Users\skyla\OneDrive\Desktop\Visual Studio\VFW_Day4Notes\obj\Debug\VFW_Day4Notes.csproj.GenerateResource.cache
+C:\Users\skyla\OneDrive\Desktop\Visual Studio\VFW_Day4Notes\obj\Debug\VFW_Day4Notes.csproj.CoreCompileInputs.cache
+C:\Users\skyla\OneDrive\Desktop\Visual Studio\VFW_Day4Notes\obj\Debug\VFW_Day4Notes.exe
+C:\Users\skyla\OneDrive\Desktop\Visual Studio\VFW_Day4Notes\obj\Debug\VFW_Day4Notes.pdb

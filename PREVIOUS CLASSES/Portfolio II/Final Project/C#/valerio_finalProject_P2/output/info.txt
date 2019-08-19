@@ -1,0 +1,3 @@
+Blue,warrior,10,15,17,7,6
+Briffon,mage,4,4,18,10,13
+Sky,warrior,10,13,19,6,8

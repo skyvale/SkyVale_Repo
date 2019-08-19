@@ -1,7 +1,0 @@
-Z:\Documents\Visual Studio\Day3_ValidatingPrompts\Day3_ValidatingPrompts\obj\Debug\Day3_ValidatingPrompts.csprojAssemblyReference.cache
-Z:\Documents\Visual Studio\Day3_ValidatingPrompts\Day3_ValidatingPrompts\obj\Debug\Day3_ValidatingPrompts.csproj.CoreCompileInputs.cache
-Z:\Documents\Visual Studio\Day3_ValidatingPrompts\Day3_ValidatingPrompts\bin\Debug\Day3_ValidatingPrompts.exe.config
-Z:\Documents\Visual Studio\Day3_ValidatingPrompts\Day3_ValidatingPrompts\bin\Debug\Day3_ValidatingPrompts.exe
-Z:\Documents\Visual Studio\Day3_ValidatingPrompts\Day3_ValidatingPrompts\bin\Debug\Day3_ValidatingPrompts.pdb
-Z:\Documents\Visual Studio\Day3_ValidatingPrompts\Day3_ValidatingPrompts\obj\Debug\Day3_ValidatingPrompts.exe
-Z:\Documents\Visual Studio\Day3_ValidatingPrompts\Day3_ValidatingPrompts\obj\Debug\Day3_ValidatingPrompts.pdb

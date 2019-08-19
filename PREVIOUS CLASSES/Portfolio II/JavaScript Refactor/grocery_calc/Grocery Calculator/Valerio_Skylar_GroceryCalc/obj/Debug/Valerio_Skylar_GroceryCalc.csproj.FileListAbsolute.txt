@@ -1,0 +1,7 @@
+Z:\Documents\Visual Studio\Valerio_Skylar_GroceryCalc\Valerio_Skylar_GroceryCalc\obj\Debug\Valerio_Skylar_GroceryCalc.csprojAssemblyReference.cache
+Z:\Documents\Visual Studio\Valerio_Skylar_GroceryCalc\Valerio_Skylar_GroceryCalc\obj\Debug\Valerio_Skylar_GroceryCalc.csproj.CoreCompileInputs.cache
+Z:\Documents\Visual Studio\Valerio_Skylar_GroceryCalc\Valerio_Skylar_GroceryCalc\bin\Debug\Valerio_Skylar_GroceryCalc.exe.config
+Z:\Documents\Visual Studio\Valerio_Skylar_GroceryCalc\Valerio_Skylar_GroceryCalc\bin\Debug\Valerio_Skylar_GroceryCalc.exe
+Z:\Documents\Visual Studio\Valerio_Skylar_GroceryCalc\Valerio_Skylar_GroceryCalc\bin\Debug\Valerio_Skylar_GroceryCalc.pdb
+Z:\Documents\Visual Studio\Valerio_Skylar_GroceryCalc\Valerio_Skylar_GroceryCalc\obj\Debug\Valerio_Skylar_GroceryCalc.exe
+Z:\Documents\Visual Studio\Valerio_Skylar_GroceryCalc\Valerio_Skylar_GroceryCalc\obj\Debug\Valerio_Skylar_GroceryCalc.pdb

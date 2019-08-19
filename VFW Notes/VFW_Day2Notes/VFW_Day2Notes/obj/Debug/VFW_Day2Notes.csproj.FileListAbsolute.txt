@@ -1,0 +1,21 @@
+C:\Users\skyla\source\repos\VFW_Day2Notes\VFW_Day2Notes\bin\Debug\VFW_Day2Notes.exe.config
+C:\Users\skyla\source\repos\VFW_Day2Notes\VFW_Day2Notes\bin\Debug\VFW_Day2Notes.exe
+C:\Users\skyla\source\repos\VFW_Day2Notes\VFW_Day2Notes\bin\Debug\VFW_Day2Notes.pdb
+C:\Users\skyla\source\repos\VFW_Day2Notes\VFW_Day2Notes\obj\Debug\VFW_Day2Notes.csprojAssemblyReference.cache
+C:\Users\skyla\source\repos\VFW_Day2Notes\VFW_Day2Notes\obj\Debug\VFW_Day2Notes.Form1.resources
+C:\Users\skyla\source\repos\VFW_Day2Notes\VFW_Day2Notes\obj\Debug\VFW_Day2Notes.Properties.Resources.resources
+C:\Users\skyla\source\repos\VFW_Day2Notes\VFW_Day2Notes\obj\Debug\VFW_Day2Notes.csproj.GenerateResource.cache
+C:\Users\skyla\source\repos\VFW_Day2Notes\VFW_Day2Notes\obj\Debug\VFW_Day2Notes.csproj.CoreCompileInputs.cache
+C:\Users\skyla\source\repos\VFW_Day2Notes\VFW_Day2Notes\obj\Debug\VFW_Day2Notes.exe
+C:\Users\skyla\source\repos\VFW_Day2Notes\VFW_Day2Notes\obj\Debug\VFW_Day2Notes.pdb
+C:\Users\skyla\OneDrive\Desktop\Visual Studio\VFW_Day2Notes\VFW_Day2Notes\bin\Debug\VFW_Day2Notes.exe.config
+C:\Users\skyla\OneDrive\Desktop\Visual Studio\VFW_Day2Notes\VFW_Day2Notes\bin\Debug\VFW_Day2Notes.exe
+C:\Users\skyla\OneDrive\Desktop\Visual Studio\VFW_Day2Notes\VFW_Day2Notes\bin\Debug\VFW_Day2Notes.pdb
+C:\Users\skyla\OneDrive\Desktop\Visual Studio\VFW_Day2Notes\VFW_Day2Notes\obj\Debug\VFW_Day2Notes.csprojAssemblyReference.cache
+C:\Users\skyla\OneDrive\Desktop\Visual Studio\VFW_Day2Notes\VFW_Day2Notes\obj\Debug\VFW_Day2Notes.Form1.resources
+C:\Users\skyla\OneDrive\Desktop\Visual Studio\VFW_Day2Notes\VFW_Day2Notes\obj\Debug\VFW_Day2Notes.Properties.Resources.resources
+C:\Users\skyla\OneDrive\Desktop\Visual Studio\VFW_Day2Notes\VFW_Day2Notes\obj\Debug\VFW_Day2Notes.csproj.GenerateResource.cache
+C:\Users\skyla\OneDrive\Desktop\Visual Studio\VFW_Day2Notes\VFW_Day2Notes\obj\Debug\VFW_Day2Notes.csproj.CoreCompileInputs.cache
+C:\Users\skyla\OneDrive\Desktop\Visual Studio\VFW_Day2Notes\VFW_Day2Notes\obj\Debug\VFW_Day2Notes.exe
+C:\Users\skyla\OneDrive\Desktop\Visual Studio\VFW_Day2Notes\VFW_Day2Notes\obj\Debug\VFW_Day2Notes.pdb
+C:\Users\skyla\OneDrive\Desktop\Visual Studio\VFW_Day2Notes\VFW_Day2Notes\obj\Debug\VFW_Day2Notes.PeopleCount.resources

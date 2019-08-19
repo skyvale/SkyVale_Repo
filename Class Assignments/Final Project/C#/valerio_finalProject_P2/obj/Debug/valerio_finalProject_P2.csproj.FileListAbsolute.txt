@@ -1,7 +1,0 @@
-\\vmware-host\Shared Folders\Desktop\valerio_finalProject_P2\valerio_finalProject_P2\obj\Debug\valerio_finalProject_P2.csprojAssemblyReference.cache
-\\vmware-host\Shared Folders\Desktop\valerio_finalProject_P2\valerio_finalProject_P2\obj\Debug\valerio_finalProject_P2.csproj.CoreCompileInputs.cache
-\\vmware-host\Shared Folders\Desktop\valerio_finalProject_P2\valerio_finalProject_P2\bin\Debug\valerio_finalProject_P2.exe.config
-\\vmware-host\Shared Folders\Desktop\valerio_finalProject_P2\valerio_finalProject_P2\bin\Debug\valerio_finalProject_P2.exe
-\\vmware-host\Shared Folders\Desktop\valerio_finalProject_P2\valerio_finalProject_P2\bin\Debug\valerio_finalProject_P2.pdb
-\\vmware-host\Shared Folders\Desktop\valerio_finalProject_P2\valerio_finalProject_P2\obj\Debug\valerio_finalProject_P2.exe
-\\vmware-host\Shared Folders\Desktop\valerio_finalProject_P2\valerio_finalProject_P2\obj\Debug\valerio_finalProject_P2.pdb

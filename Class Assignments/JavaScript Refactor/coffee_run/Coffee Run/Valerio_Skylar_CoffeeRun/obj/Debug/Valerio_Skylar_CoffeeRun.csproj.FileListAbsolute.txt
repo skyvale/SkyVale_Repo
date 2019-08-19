@@ -1,7 +1,0 @@
-C:\Users\Skylar Valerio\source\repos\Valerio_Skylar_CoffeeRun\Valerio_Skylar_CoffeeRun\bin\Debug\Valerio_Skylar_CoffeeRun.exe.config
-C:\Users\Skylar Valerio\source\repos\Valerio_Skylar_CoffeeRun\Valerio_Skylar_CoffeeRun\bin\Debug\Valerio_Skylar_CoffeeRun.exe
-C:\Users\Skylar Valerio\source\repos\Valerio_Skylar_CoffeeRun\Valerio_Skylar_CoffeeRun\bin\Debug\Valerio_Skylar_CoffeeRun.pdb
-C:\Users\Skylar Valerio\source\repos\Valerio_Skylar_CoffeeRun\Valerio_Skylar_CoffeeRun\obj\Debug\Valerio_Skylar_CoffeeRun.csprojAssemblyReference.cache
-C:\Users\Skylar Valerio\source\repos\Valerio_Skylar_CoffeeRun\Valerio_Skylar_CoffeeRun\obj\Debug\Valerio_Skylar_CoffeeRun.csproj.CoreCompileInputs.cache
-C:\Users\Skylar Valerio\source\repos\Valerio_Skylar_CoffeeRun\Valerio_Skylar_CoffeeRun\obj\Debug\Valerio_Skylar_CoffeeRun.exe
-C:\Users\Skylar Valerio\source\repos\Valerio_Skylar_CoffeeRun\Valerio_Skylar_CoffeeRun\obj\Debug\Valerio_Skylar_CoffeeRun.pdb

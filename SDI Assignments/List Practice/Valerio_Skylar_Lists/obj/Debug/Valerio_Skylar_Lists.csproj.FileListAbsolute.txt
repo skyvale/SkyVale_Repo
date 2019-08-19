@@ -1,7 +1,0 @@
-Z:\Documents\Visual Studio\Valerio_Skylar_Lists\Valerio_Skylar_Lists\bin\Debug\Valerio_Skylar_Lists.exe.config
-Z:\Documents\Visual Studio\Valerio_Skylar_Lists\Valerio_Skylar_Lists\bin\Debug\Valerio_Skylar_Lists.exe
-Z:\Documents\Visual Studio\Valerio_Skylar_Lists\Valerio_Skylar_Lists\bin\Debug\Valerio_Skylar_Lists.pdb
-Z:\Documents\Visual Studio\Valerio_Skylar_Lists\Valerio_Skylar_Lists\obj\Debug\Valerio_Skylar_Lists.csprojAssemblyReference.cache
-Z:\Documents\Visual Studio\Valerio_Skylar_Lists\Valerio_Skylar_Lists\obj\Debug\Valerio_Skylar_Lists.csproj.CoreCompileInputs.cache
-Z:\Documents\Visual Studio\Valerio_Skylar_Lists\Valerio_Skylar_Lists\obj\Debug\Valerio_Skylar_Lists.exe
-Z:\Documents\Visual Studio\Valerio_Skylar_Lists\Valerio_Skylar_Lists\obj\Debug\Valerio_Skylar_Lists.pdb

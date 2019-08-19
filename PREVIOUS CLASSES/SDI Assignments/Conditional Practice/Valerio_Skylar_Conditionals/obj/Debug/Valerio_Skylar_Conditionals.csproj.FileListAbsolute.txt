@@ -1,0 +1,7 @@
+Z:\Documents\Visual Studio\Valerio_Skylar_Conditionals\Valerio_Skylar_Conditionals\obj\Debug\Valerio_Skylar_Conditionals.csprojAssemblyReference.cache
+Z:\Documents\Visual Studio\Valerio_Skylar_Conditionals\Valerio_Skylar_Conditionals\obj\Debug\Valerio_Skylar_Conditionals.csproj.CoreCompileInputs.cache
+Z:\Documents\Visual Studio\Valerio_Skylar_Conditionals\Valerio_Skylar_Conditionals\bin\Debug\Valerio_Skylar_Conditionals.exe.config
+Z:\Documents\Visual Studio\Valerio_Skylar_Conditionals\Valerio_Skylar_Conditionals\bin\Debug\Valerio_Skylar_Conditionals.exe
+Z:\Documents\Visual Studio\Valerio_Skylar_Conditionals\Valerio_Skylar_Conditionals\bin\Debug\Valerio_Skylar_Conditionals.pdb
+Z:\Documents\Visual Studio\Valerio_Skylar_Conditionals\Valerio_Skylar_Conditionals\obj\Debug\Valerio_Skylar_Conditionals.exe
+Z:\Documents\Visual Studio\Valerio_Skylar_Conditionals\Valerio_Skylar_Conditionals\obj\Debug\Valerio_Skylar_Conditionals.pdb

@@ -1,7 +1,0 @@
-Z:\Documents\Visual Studio\Valerio_Skylar_Arrays\Valerio_Skylar_Arrays\bin\Debug\Valerio_Skylar_Arrays.exe.config
-Z:\Documents\Visual Studio\Valerio_Skylar_Arrays\Valerio_Skylar_Arrays\bin\Debug\Valerio_Skylar_Arrays.exe
-Z:\Documents\Visual Studio\Valerio_Skylar_Arrays\Valerio_Skylar_Arrays\bin\Debug\Valerio_Skylar_Arrays.pdb
-Z:\Documents\Visual Studio\Valerio_Skylar_Arrays\Valerio_Skylar_Arrays\obj\Debug\Valerio_Skylar_Arrays.csprojAssemblyReference.cache
-Z:\Documents\Visual Studio\Valerio_Skylar_Arrays\Valerio_Skylar_Arrays\obj\Debug\Valerio_Skylar_Arrays.csproj.CoreCompileInputs.cache
-Z:\Documents\Visual Studio\Valerio_Skylar_Arrays\Valerio_Skylar_Arrays\obj\Debug\Valerio_Skylar_Arrays.exe
-Z:\Documents\Visual Studio\Valerio_Skylar_Arrays\Valerio_Skylar_Arrays\obj\Debug\Valerio_Skylar_Arrays.pdb

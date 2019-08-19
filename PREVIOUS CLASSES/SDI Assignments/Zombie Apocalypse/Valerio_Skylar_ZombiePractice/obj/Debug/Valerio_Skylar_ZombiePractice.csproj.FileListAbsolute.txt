@@ -1,0 +1,7 @@
+C:\Users\Skylar Valerio\source\repos\Valerio_Skylar_ZombiePractice\Valerio_Skylar_ZombiePractice\bin\Debug\Valerio_Skylar_ZombiePractice.exe.config
+C:\Users\Skylar Valerio\source\repos\Valerio_Skylar_ZombiePractice\Valerio_Skylar_ZombiePractice\bin\Debug\Valerio_Skylar_ZombiePractice.exe
+C:\Users\Skylar Valerio\source\repos\Valerio_Skylar_ZombiePractice\Valerio_Skylar_ZombiePractice\bin\Debug\Valerio_Skylar_ZombiePractice.pdb
+C:\Users\Skylar Valerio\source\repos\Valerio_Skylar_ZombiePractice\Valerio_Skylar_ZombiePractice\obj\Debug\Valerio_Skylar_ZombiePractice.csprojAssemblyReference.cache
+C:\Users\Skylar Valerio\source\repos\Valerio_Skylar_ZombiePractice\Valerio_Skylar_ZombiePractice\obj\Debug\Valerio_Skylar_ZombiePractice.csproj.CoreCompileInputs.cache
+C:\Users\Skylar Valerio\source\repos\Valerio_Skylar_ZombiePractice\Valerio_Skylar_ZombiePractice\obj\Debug\Valerio_Skylar_ZombiePractice.exe
+C:\Users\Skylar Valerio\source\repos\Valerio_Skylar_ZombiePractice\Valerio_Skylar_ZombiePractice\obj\Debug\Valerio_Skylar_ZombiePractice.pdb
