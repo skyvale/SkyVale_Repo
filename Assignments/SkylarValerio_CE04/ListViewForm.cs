@@ -23,9 +23,6 @@ namespace SkylarValerio_CE04
         // event handler to remove all from list
         public event EventHandler RemoveAll;
 
-        // event handler to change which object is selected in the ListView
-        public event EventHandler SelectionChanged;
-
         // return the character for SelectionChanged
         public Character SelectedObject
         {
@@ -66,10 +63,11 @@ namespace SkylarValerio_CE04
             lvi.Text = c.ToString();
             lvwCharacters.Items.Add(lvi);
             lvi.Tag = c;
+            lvi.ImageIndex = c.ImageIndex;
 
             // get the index of the created character and set it to the ImageIndex so the images will show in ListView
-            int index = lvwCharacters.Items.IndexOf(lvi);
-            lvwCharacters.Items[index].ImageIndex = c.ImageIndex;
+            //int index = lvwCharacters.Items.IndexOf(lvi);
+            //lvwCharacters.Items[index].ImageIndex = c.ImageIndex;
 
         }
 
@@ -84,13 +82,8 @@ namespace SkylarValerio_CE04
 
         }
 
-        private void LvwCharacters_SelectedIndexChanged(object sender, EventArgs e)
+        private void LvwCharacters_DoubleClick(object sender, EventArgs e)
         {
-            // raise the SelectionChanged method
-            if (SelectionChanged != null)
-            {
-                SelectionChanged?.Invoke(this, new EventArgs());
-            }
 
         }
     }

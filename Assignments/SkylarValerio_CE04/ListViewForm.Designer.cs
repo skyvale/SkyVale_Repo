@@ -41,13 +41,14 @@
             // 
             this.lvwCharacters.HideSelection = false;
             this.lvwCharacters.LargeImageList = this.imgListCharacter;
-            this.lvwCharacters.Location = new System.Drawing.Point(0, 28);
+            this.lvwCharacters.Location = new System.Drawing.Point(0, 54);
+            this.lvwCharacters.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.lvwCharacters.MultiSelect = false;
             this.lvwCharacters.Name = "lvwCharacters";
-            this.lvwCharacters.Size = new System.Drawing.Size(308, 261);
+            this.lvwCharacters.Size = new System.Drawing.Size(612, 498);
             this.lvwCharacters.TabIndex = 0;
             this.lvwCharacters.UseCompatibleStateImageBehavior = false;
-            this.lvwCharacters.SelectedIndexChanged += new System.EventHandler(this.LvwCharacters_SelectedIndexChanged);
+            this.lvwCharacters.DoubleClick += new System.EventHandler(this.LvwCharacters_DoubleClick);
             // 
             // imgListCharacter
             // 
@@ -60,11 +61,13 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnClearAll});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(308, 25);
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
+            this.toolStrip1.Size = new System.Drawing.Size(616, 42);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -73,17 +76,18 @@
             this.btnClearAll.Image = global::SkylarValerio_CE04.Properties.Resources.red_x;
             this.btnClearAll.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnClearAll.Name = "btnClearAll";
-            this.btnClearAll.Size = new System.Drawing.Size(71, 22);
+            this.btnClearAll.Size = new System.Drawing.Size(139, 36);
             this.btnClearAll.Text = "Clear All";
             this.btnClearAll.Click += new System.EventHandler(this.BtnClearAll_Click);
             // 
             // ListViewForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(308, 287);
+            this.ClientSize = new System.Drawing.Size(616, 552);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.lvwCharacters);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "ListViewForm";
             this.Text = "ListViewForm";
             this.toolStrip1.ResumeLayout(false);

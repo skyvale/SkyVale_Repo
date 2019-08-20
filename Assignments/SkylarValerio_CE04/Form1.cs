@@ -24,12 +24,6 @@ namespace SkylarValerio_CE04
         // event handler to add to list
         public event EventHandler<CharacterArgs> AddToListForm;
 
-
-        // make globals so they can be accessed anywhere in the application
-        public UserInputForm userInputForm;
-        public ListViewForm listViewForm;
-
-
         public MainForm()
         {
             InitializeComponent();
@@ -71,7 +65,7 @@ namespace SkylarValerio_CE04
         private void BtnOpenInputForm_Click(object sender, EventArgs e)
         {
             // instantiate the global userInputForm
-            userInputForm = new UserInputForm();
+            UserInputForm userInputForm = new UserInputForm();
 
             // subscribe the closing event handler
             userInputForm.FormClosed += new FormClosedEventHandler(FormClosed_UserInput);
@@ -79,9 +73,6 @@ namespace SkylarValerio_CE04
             // subscribe to addToList
             userInputForm.AddToList += AddToList;
 
-            // subscribe to the method to change the selection
-            // TODO!! object n
-            listViewForm.SelectionChanged += userInputForm.SelectionChanged_EventHandler;
 
             // show the form as modeless so the user can move between forms
             userInputForm.Show();
@@ -115,7 +106,7 @@ namespace SkylarValerio_CE04
         private void DisplayToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // instantiate the global ListViewForm
-            listViewForm = new ListViewForm();
+            ListViewForm listViewForm = new ListViewForm();
 
             // subscribe the closing event handler
             listViewForm.FormClosed += new FormClosedEventHandler(FormClosed_ListView);
