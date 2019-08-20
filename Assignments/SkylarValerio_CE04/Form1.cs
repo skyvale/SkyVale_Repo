@@ -73,7 +73,6 @@ namespace SkylarValerio_CE04
             // subscribe to addToList
             userInputForm.AddToList += AddToList;
 
-
             // show the form as modeless so the user can move between forms
             userInputForm.Show();
 
