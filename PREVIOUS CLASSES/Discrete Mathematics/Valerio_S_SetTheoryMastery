@@ -1,0 +1,147 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Set Theory\n",
+    "### Use set relations to generate the sets and get the cardinality. All questions can be completed in the code block below. \n",
+    "### Question 1\n",
+    "#### How many respondants own one of the newest consoles?\n",
+    "This includes the XBox One (XONE) and the PlayStation 4 (PS4)\n",
+    "### Question 2\n",
+    "#### How many respondants owned an 8-bit or 16-bit system?\n",
+    "This includes the Nintendo Entertainment system (NES), Sega Master System (SegaM), Super Nintendo Entertainment System (SNES), and Sega Genesis/Mega Drive (SegaG)\n",
+    "### Question 3\n",
+    "#### How many respondants are \"Console loyalists\"?\n",
+    "This would count people who owned either Playstation Console or an XBox Console, but not both\n",
+    "### Question 4\n",
+    "#### How many respondants have only owned \"retro consoles\"?\n",
+    "In this case retro consoles refers to anything before the \"seventh generation\" systems so includes anything on this list except Playstion 3 and 4 (PS3, PS4) and XBox 360 and XBox One (X360,XONE)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Question 1 : Number of people who own the newest consoles =  33\n",
+      "Question 2 : Number of people who an 8-bit or 16-bit console =  34\n",
+      "Question 3 : Number of people are console loyalists =  12\n",
+      "Question 3 : Number of people only owned retro consoles =  1\n"
+     ]
+    }
+   ],
+   "source": [
+    "#================================= Do Not Edit: Variable Initialization =========================================\n",
+    "from sympy import FiniteSet\n",
+    "NES = {'Eoikka','Eric','Tyler','Oswaldo','Corey','Devin','Robert','Alex','Ronald','Dakota','Justin'}\n",
+    "SegaM = {'Eoikka','Oswaldo','Dakota'}\n",
+    "SNES = {'Eoikka','Christian','Eric','Moises','Tyler','Theodore','Oswaldo','Devin','Robert','Ronald','Dakota'}\n",
+    "SegaG = {'Eoikka','Erasmo','Eric','Tyler','Theodore','Oswaldo','Ronald','Ronald','Dakota','Justin'}\n",
+    "PS1 = {'Juan','Eoikka','Erasmo','Eric','Moises','Tyler','Theodore','Oswaldo','Curtis','Devin','Robert','Ronald','Dakota','Justin','Chase','Sofiane'}\n",
+    "SegaD = {'Eoikka','Erasmo','Eric','Tyler','Oswaldo','Devin','Ronald','Dakota','Justin'}\n",
+    "N64 = {'Juan','Eoikka','Erasmo','Christian','Johnathan','Zac','Eric','Moises','Tyler','Theodore','Oswaldo','Devin','Robert','Ronald','Dakota','Justin','Chase'}\n",
+    "PS2 = {'Juan','Eoikka','Johnathan','Zac','Eric','Moises','Tyler','Theodore','Oswaldo','Curtis','Devin','Robert','Cory','Alex','Ronald','Dakota','Justin','Chase','Sofiane'}\n",
+    "XBX = {'Juan','Eoikka','Eric','Moises','Tyler','Theodore','Cory','Dakota','Justin','Sofiane'}\n",
+    "GC = {'Juan','Eoikka','Christian','Zac','Eric','Austin','Moises','Tyler','Theodore','Oswaldo','Devin','Cory','Ronald','Dakota','Justin'}\n",
+    "X360 = {'Juan','Eoikka','Christian','Johnathan','Zac','Eric','Austin','Moises','Tyler','Theodore','Oswaldo','Cory','Jameson','Ronald','Dakota','Justin','Sofiane'}\n",
+    "PS3 = {'Juan','Eric','Austin','Moises','Tyler','Theodore','Oswaldo','Curtis','Devin','Robert','Cory','Dakota','Justin','Chase','Sofiane'}\n",
+    "XONE = {'Eoikka','Johnathan','Zac','Austin','Moises','Tony','Tyler','Theodore','Robert','Jameson','Alex','Dakota','Justin'}\n",
+    "PS4 = {'Juan','Eoikka','Erasmo','Christian','Johnathan','Austin','Moises','Tony','Tyler','Theodore','Patrick','Michael','Devin','Robert','Cory','Ronald','Dakota','Justin','Chase','Sofiane'}\n",
+    "q1 = 0\n",
+    "q2 = 0\n",
+    "q3 = 0\n",
+    "q4 = 0\n",
+    "#==============================================================================================================\n",
+    "#Work goes here\n",
+    "\n",
+    "q1=len(XONE)+len(PS4)\n",
+    "q2=len(NES)+len(SegaM)+len(SNES)+len(SegaG)\n",
+    "\n",
+    "#------\n",
+    "\n",
+    "A=PS1^PS2\n",
+    "B=PS3^PS4\n",
+    "PS_Total=A^B\n",
+    "\n",
+    "C=XBX^X360\n",
+    "BOX_Total=C^XONE\n",
+    "\n",
+    "Symmetric_Difference=PS_Total^BOX_Total\n",
+    "q3=len(Symmetric_Difference)\n",
+    "\n",
+    "#------\n",
+    "\n",
+    "#retro consoles: NES, SegaM, SNES, SegaG, SegaD, GC, PS2, PS1, XBX\n",
+    "#have not owned: PS3, PS4, X360, XONE\n",
+    "\n",
+    "Retro= NES|SegaM|SNES|SegaG|SegaD|GC|PS2|PS1|XBX\n",
+    "Nex_Gen= PS3|PS4|X360|XONE\n",
+    "\n",
+    "#print(Retro)\n",
+    "#print()\n",
+    "#print(Nex_Gen)\n",
+    "#print()\n",
+    "\n",
+    "Retro_Only= Retro-Nex_Gen\n",
+    "q4= len(Retro_Only)\n",
+    "\n",
+    "\n",
+    "#-----------------------------------  Do Not Edit: Output ----------------------------------------- \n",
+    "# Print out answers\n",
+    "print(\"Question 1 : Number of people who own the newest consoles = \",q1)\n",
+    "print(\"Question 2 : Number of people who an 8-bit or 16-bit console = \",q2)\n",
+    "print(\"Question 3 : Number of people are console loyalists = \",q3)\n",
+    "print(\"Question 3 : Number of people only owned retro consoles = \",q4)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "Check your code then upload the notebook to FSO\n",
+    "#### Name File : Lastname_FirstInitial_SetTheoryMastery"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.7.0"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
