@@ -1,0 +1,7 @@
+\\vmware-host\Shared Folders\Desktop\ASD_Review\ASD_Review\obj\Debug\ASD_Review.csprojAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\ASD_Review\ASD_Review\obj\Debug\ASD_Review.csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Desktop\ASD_Review\ASD_Review\bin\Debug\ASD_Review.exe.config
+\\vmware-host\Shared Folders\Desktop\ASD_Review\ASD_Review\bin\Debug\ASD_Review.exe
+\\vmware-host\Shared Folders\Desktop\ASD_Review\ASD_Review\bin\Debug\ASD_Review.pdb
+\\vmware-host\Shared Folders\Desktop\ASD_Review\ASD_Review\obj\Debug\ASD_Review.exe
+\\vmware-host\Shared Folders\Desktop\ASD_Review\ASD_Review\obj\Debug\ASD_Review.pdb

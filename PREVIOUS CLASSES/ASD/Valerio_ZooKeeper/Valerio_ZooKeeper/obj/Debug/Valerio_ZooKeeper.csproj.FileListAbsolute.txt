@@ -1,0 +1,7 @@
+\\vmware-host\Shared Folders\Desktop\Valerio_ZooKeeper\Valerio_ZooKeeper\bin\Debug\Valerio_ZooKeeper.exe.config
+\\vmware-host\Shared Folders\Desktop\Valerio_ZooKeeper\Valerio_ZooKeeper\bin\Debug\Valerio_ZooKeeper.exe
+\\vmware-host\Shared Folders\Desktop\Valerio_ZooKeeper\Valerio_ZooKeeper\bin\Debug\Valerio_ZooKeeper.pdb
+\\vmware-host\Shared Folders\Desktop\Valerio_ZooKeeper\Valerio_ZooKeeper\obj\Debug\Valerio_ZooKeeper.csprojAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\Valerio_ZooKeeper\Valerio_ZooKeeper\obj\Debug\Valerio_ZooKeeper.csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Desktop\Valerio_ZooKeeper\Valerio_ZooKeeper\obj\Debug\Valerio_ZooKeeper.exe
+\\vmware-host\Shared Folders\Desktop\Valerio_ZooKeeper\Valerio_ZooKeeper\obj\Debug\Valerio_ZooKeeper.pdb

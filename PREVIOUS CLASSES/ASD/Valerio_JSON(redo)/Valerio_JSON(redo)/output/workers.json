@@ -1,0 +1,26 @@
+[
+{
+"name": " Kevin",
+"address": " 5678 Road St"
+"position": "manager"
+"position": "57000"
+},
+{
+"name": "Devin",
+"address": "1234 Street Way"
+"position": "manager"
+"position": "32000"
+},
+{
+"name": "Dimes",
+"address": "1010 Coin Way"
+"position": "manager"
+"position": "4.00"
+},
+{
+"name": "Nickles",
+"address": "5555 Coin Way"
+"position": "manager"
+"position": "2.00"
+}
+]

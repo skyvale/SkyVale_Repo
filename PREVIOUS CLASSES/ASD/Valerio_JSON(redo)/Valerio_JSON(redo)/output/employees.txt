@@ -1,0 +1,4 @@
+m, Kevin, 5678 Road St,55000,2000
+m,Devin,1234 Street Way,30000,2000
+f,Dimes,1010 Coin Way,0.10,40
+f,Nickles,5555 Coin Way,0.05,40

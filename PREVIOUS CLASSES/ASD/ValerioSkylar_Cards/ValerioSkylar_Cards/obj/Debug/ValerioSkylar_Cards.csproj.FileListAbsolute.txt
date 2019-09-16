@@ -1,0 +1,7 @@
+\\vmware-host\Shared Folders\Desktop\ValerioSkylar_Cards\ValerioSkylar_Cards\bin\Debug\ValerioSkylar_Cards.exe.config
+\\vmware-host\Shared Folders\Desktop\ValerioSkylar_Cards\ValerioSkylar_Cards\bin\Debug\ValerioSkylar_Cards.exe
+\\vmware-host\Shared Folders\Desktop\ValerioSkylar_Cards\ValerioSkylar_Cards\bin\Debug\ValerioSkylar_Cards.pdb
+\\vmware-host\Shared Folders\Desktop\ValerioSkylar_Cards\ValerioSkylar_Cards\obj\Debug\ValerioSkylar_Cards.csprojAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\ValerioSkylar_Cards\ValerioSkylar_Cards\obj\Debug\ValerioSkylar_Cards.csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Desktop\ValerioSkylar_Cards\ValerioSkylar_Cards\obj\Debug\ValerioSkylar_Cards.exe
+\\vmware-host\Shared Folders\Desktop\ValerioSkylar_Cards\ValerioSkylar_Cards\obj\Debug\ValerioSkylar_Cards.pdb

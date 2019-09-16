@@ -1,0 +1,7 @@
+\\vmware-host\Shared Folders\Desktop\ASD_JSON\ASD_JSON\bin\Debug\ASD_JSON.exe.config
+\\vmware-host\Shared Folders\Desktop\ASD_JSON\ASD_JSON\bin\Debug\ASD_JSON.exe
+\\vmware-host\Shared Folders\Desktop\ASD_JSON\ASD_JSON\bin\Debug\ASD_JSON.pdb
+\\vmware-host\Shared Folders\Desktop\ASD_JSON\ASD_JSON\obj\Debug\ASD_JSON.csprojAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\ASD_JSON\ASD_JSON\obj\Debug\ASD_JSON.csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Desktop\ASD_JSON\ASD_JSON\obj\Debug\ASD_JSON.exe
+\\vmware-host\Shared Folders\Desktop\ASD_JSON\ASD_JSON\obj\Debug\ASD_JSON.pdb

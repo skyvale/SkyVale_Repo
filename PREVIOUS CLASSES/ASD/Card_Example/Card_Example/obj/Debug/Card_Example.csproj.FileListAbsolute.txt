@@ -1,0 +1,7 @@
+\\vmware-host\Shared Folders\Desktop\Card_Example\Card_Example\bin\Debug\Card_Example.exe.config
+\\vmware-host\Shared Folders\Desktop\Card_Example\Card_Example\bin\Debug\Card_Example.exe
+\\vmware-host\Shared Folders\Desktop\Card_Example\Card_Example\bin\Debug\Card_Example.pdb
+\\vmware-host\Shared Folders\Desktop\Card_Example\Card_Example\obj\Debug\Card_Example.csprojAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\Card_Example\Card_Example\obj\Debug\Card_Example.csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Desktop\Card_Example\Card_Example\obj\Debug\Card_Example.exe
+\\vmware-host\Shared Folders\Desktop\Card_Example\Card_Example\obj\Debug\Card_Example.pdb

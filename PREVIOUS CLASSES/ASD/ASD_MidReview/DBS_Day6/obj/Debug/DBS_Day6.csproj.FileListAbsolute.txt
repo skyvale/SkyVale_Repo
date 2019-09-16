@@ -1,0 +1,7 @@
+\\vmware-host\Shared Folders\Desktop\DBS_Day6\DBS_Day6\bin\Debug\DBS_Day6.exe.config
+\\vmware-host\Shared Folders\Desktop\DBS_Day6\DBS_Day6\bin\Debug\DBS_Day6.exe
+\\vmware-host\Shared Folders\Desktop\DBS_Day6\DBS_Day6\bin\Debug\DBS_Day6.pdb
+\\vmware-host\Shared Folders\Desktop\DBS_Day6\DBS_Day6\obj\Debug\DBS_Day6.csprojAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\DBS_Day6\DBS_Day6\obj\Debug\DBS_Day6.csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Desktop\DBS_Day6\DBS_Day6\obj\Debug\DBS_Day6.exe
+\\vmware-host\Shared Folders\Desktop\DBS_Day6\DBS_Day6\obj\Debug\DBS_Day6.pdb

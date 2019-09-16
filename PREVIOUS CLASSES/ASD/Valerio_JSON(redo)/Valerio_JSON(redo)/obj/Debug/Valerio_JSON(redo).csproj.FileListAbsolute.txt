@@ -1,0 +1,7 @@
+\\vmware-host\Shared Folders\Desktop\Valerio_JSON(redo)\Valerio_JSON(redo)\bin\Debug\Valerio_JSON(redo).exe.config
+\\vmware-host\Shared Folders\Desktop\Valerio_JSON(redo)\Valerio_JSON(redo)\bin\Debug\Valerio_JSON(redo).exe
+\\vmware-host\Shared Folders\Desktop\Valerio_JSON(redo)\Valerio_JSON(redo)\bin\Debug\Valerio_JSON(redo).pdb
+\\vmware-host\Shared Folders\Desktop\Valerio_JSON(redo)\Valerio_JSON(redo)\obj\Debug\Valerio_JSON(redo).csprojAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\Valerio_JSON(redo)\Valerio_JSON(redo)\obj\Debug\Valerio_JSON(redo).csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Desktop\Valerio_JSON(redo)\Valerio_JSON(redo)\obj\Debug\Valerio_JSON(redo).exe
+\\vmware-host\Shared Folders\Desktop\Valerio_JSON(redo)\Valerio_JSON(redo)\obj\Debug\Valerio_JSON(redo).pdb

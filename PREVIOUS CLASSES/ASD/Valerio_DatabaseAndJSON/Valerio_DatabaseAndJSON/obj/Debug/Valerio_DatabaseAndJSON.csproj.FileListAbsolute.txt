@@ -1,0 +1,9 @@
+\\vmware-host\Shared Folders\Desktop\Valerio_DatabaseAndJSON\Valerio_DatabaseAndJSON\bin\Debug\Valerio_DatabaseAndJSON.exe.config
+\\vmware-host\Shared Folders\Desktop\Valerio_DatabaseAndJSON\Valerio_DatabaseAndJSON\bin\Debug\Valerio_DatabaseAndJSON.exe
+\\vmware-host\Shared Folders\Desktop\Valerio_DatabaseAndJSON\Valerio_DatabaseAndJSON\bin\Debug\Valerio_DatabaseAndJSON.pdb
+\\vmware-host\Shared Folders\Desktop\Valerio_DatabaseAndJSON\Valerio_DatabaseAndJSON\bin\Debug\MySql.Data.dll
+\\vmware-host\Shared Folders\Desktop\Valerio_DatabaseAndJSON\Valerio_DatabaseAndJSON\obj\Debug\Valerio_DatabaseAndJSON.csprojAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\Valerio_DatabaseAndJSON\Valerio_DatabaseAndJSON\obj\Debug\Valerio_DatabaseAndJSON.csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Desktop\Valerio_DatabaseAndJSON\Valerio_DatabaseAndJSON\obj\Debug\Valerio_DatabaseAndJSON.csproj.CopyComplete
+\\vmware-host\Shared Folders\Desktop\Valerio_DatabaseAndJSON\Valerio_DatabaseAndJSON\obj\Debug\Valerio_DatabaseAndJSON.exe
+\\vmware-host\Shared Folders\Desktop\Valerio_DatabaseAndJSON\Valerio_DatabaseAndJSON\obj\Debug\Valerio_DatabaseAndJSON.pdb

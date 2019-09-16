@@ -1,0 +1,7 @@
+\\vmware-host\Shared Folders\Desktop\ValerioSkylar_CE04\ValerioSkylar_CE04\bin\Debug\ValerioSkylar_CE04.exe.config
+\\vmware-host\Shared Folders\Desktop\ValerioSkylar_CE04\ValerioSkylar_CE04\bin\Debug\ValerioSkylar_CE04.exe
+\\vmware-host\Shared Folders\Desktop\ValerioSkylar_CE04\ValerioSkylar_CE04\bin\Debug\ValerioSkylar_CE04.pdb
+\\vmware-host\Shared Folders\Desktop\ValerioSkylar_CE04\ValerioSkylar_CE04\obj\Debug\ValerioSkylar_CE04.csprojAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\ValerioSkylar_CE04\ValerioSkylar_CE04\obj\Debug\ValerioSkylar_CE04.csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Desktop\ValerioSkylar_CE04\ValerioSkylar_CE04\obj\Debug\ValerioSkylar_CE04.exe
+\\vmware-host\Shared Folders\Desktop\ValerioSkylar_CE04\ValerioSkylar_CE04\obj\Debug\ValerioSkylar_CE04.pdb

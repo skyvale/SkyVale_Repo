@@ -1,0 +1,7 @@
+\\vmware-host\Shared Folders\Desktop\Random\Random\bin\Debug\Random.exe.config
+\\vmware-host\Shared Folders\Desktop\Random\Random\bin\Debug\Random.exe
+\\vmware-host\Shared Folders\Desktop\Random\Random\bin\Debug\Random.pdb
+\\vmware-host\Shared Folders\Desktop\Random\Random\obj\Debug\Random.csprojAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\Random\Random\obj\Debug\Random.csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Desktop\Random\Random\obj\Debug\Random.exe
+\\vmware-host\Shared Folders\Desktop\Random\Random\obj\Debug\Random.pdb

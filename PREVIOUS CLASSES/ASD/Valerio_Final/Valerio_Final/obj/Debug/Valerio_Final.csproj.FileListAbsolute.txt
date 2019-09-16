@@ -1,0 +1,7 @@
+\\vmware-host\Shared Folders\Desktop\Valerio_Final\Valerio_Final\obj\Debug\Valerio_Final.csprojAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\Valerio_Final\Valerio_Final\obj\Debug\Valerio_Final.csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Desktop\Valerio_Final\Valerio_Final\bin\Debug\Valerio_Final.exe.config
+\\vmware-host\Shared Folders\Desktop\Valerio_Final\Valerio_Final\bin\Debug\Valerio_Final.exe
+\\vmware-host\Shared Folders\Desktop\Valerio_Final\Valerio_Final\bin\Debug\Valerio_Final.pdb
+\\vmware-host\Shared Folders\Desktop\Valerio_Final\Valerio_Final\obj\Debug\Valerio_Final.exe
+\\vmware-host\Shared Folders\Desktop\Valerio_Final\Valerio_Final\obj\Debug\Valerio_Final.pdb

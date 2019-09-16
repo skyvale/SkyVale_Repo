@@ -1,0 +1,14 @@
+C:\Users\Skylar Valerio\Desktop\ASD_Day8\DBS_Day8\bin\Debug\DBS_Day8.exe.config
+C:\Users\Skylar Valerio\Desktop\ASD_Day8\DBS_Day8\bin\Debug\DBS_Day8.exe
+C:\Users\Skylar Valerio\Desktop\ASD_Day8\DBS_Day8\bin\Debug\DBS_Day8.pdb
+C:\Users\Skylar Valerio\Desktop\ASD_Day8\DBS_Day8\obj\Debug\DBS_Day8.csprojAssemblyReference.cache
+C:\Users\Skylar Valerio\Desktop\ASD_Day8\DBS_Day8\obj\Debug\DBS_Day8.csproj.CoreCompileInputs.cache
+C:\Users\Skylar Valerio\Desktop\ASD_Day8\DBS_Day8\obj\Debug\DBS_Day8.exe
+C:\Users\Skylar Valerio\Desktop\ASD_Day8\DBS_Day8\obj\Debug\DBS_Day8.pdb
+\\vmware-host\Shared Folders\Desktop\Full Sail\ASD\ASD_FileIO\DBS_Day8\bin\Debug\DBS_Day8.exe.config
+\\vmware-host\Shared Folders\Desktop\Full Sail\ASD\ASD_FileIO\DBS_Day8\bin\Debug\DBS_Day8.exe
+\\vmware-host\Shared Folders\Desktop\Full Sail\ASD\ASD_FileIO\DBS_Day8\bin\Debug\DBS_Day8.pdb
+\\vmware-host\Shared Folders\Desktop\Full Sail\ASD\ASD_FileIO\DBS_Day8\obj\Debug\DBS_Day8.csprojAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\Full Sail\ASD\ASD_FileIO\DBS_Day8\obj\Debug\DBS_Day8.csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Desktop\Full Sail\ASD\ASD_FileIO\DBS_Day8\obj\Debug\DBS_Day8.exe
+\\vmware-host\Shared Folders\Desktop\Full Sail\ASD\ASD_FileIO\DBS_Day8\obj\Debug\DBS_Day8.pdb
