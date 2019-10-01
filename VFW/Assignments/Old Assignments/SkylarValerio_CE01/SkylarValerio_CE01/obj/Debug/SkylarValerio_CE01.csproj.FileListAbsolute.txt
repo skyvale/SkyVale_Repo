@@ -1,0 +1,10 @@
+\\vmware-host\Shared Folders\Desktop\VFW\SkylarValerio_CE01\SkylarValerio_CE01\bin\Debug\SkylarValerio_CE01.exe.config
+\\vmware-host\Shared Folders\Desktop\VFW\SkylarValerio_CE01\SkylarValerio_CE01\bin\Debug\SkylarValerio_CE01.exe
+\\vmware-host\Shared Folders\Desktop\VFW\SkylarValerio_CE01\SkylarValerio_CE01\bin\Debug\SkylarValerio_CE01.pdb
+\\vmware-host\Shared Folders\Desktop\VFW\SkylarValerio_CE01\SkylarValerio_CE01\obj\Debug\SkylarValerio_CE01.csprojAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\VFW\SkylarValerio_CE01\SkylarValerio_CE01\obj\Debug\SkylarValerio_CE01.Properties.Resources.resources
+\\vmware-host\Shared Folders\Desktop\VFW\SkylarValerio_CE01\SkylarValerio_CE01\obj\Debug\SkylarValerio_CE01.csproj.GenerateResource.cache
+\\vmware-host\Shared Folders\Desktop\VFW\SkylarValerio_CE01\SkylarValerio_CE01\obj\Debug\SkylarValerio_CE01.csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Desktop\VFW\SkylarValerio_CE01\SkylarValerio_CE01\obj\Debug\SkylarValerio_CE01.exe
+\\vmware-host\Shared Folders\Desktop\VFW\SkylarValerio_CE01\SkylarValerio_CE01\obj\Debug\SkylarValerio_CE01.pdb
+\\vmware-host\Shared Folders\Desktop\VFW\SkylarValerio_CE01\SkylarValerio_CE01\obj\Debug\SkylarValerio_CE01.usersForm.resources

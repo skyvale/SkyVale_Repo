@@ -1,0 +1,11 @@
+\\vmware-host\Shared Folders\Desktop\SkyVale_Repo\VFW\VFW Notes\VFW_Day1Notess\VFW_Day1Notess\bin\Debug\netcoreapp3.0\VFW_Day1Notess.exe
+\\vmware-host\Shared Folders\Desktop\SkyVale_Repo\VFW\VFW Notes\VFW_Day1Notess\VFW_Day1Notess\bin\Debug\netcoreapp3.0\VFW_Day1Notess.deps.json
+\\vmware-host\Shared Folders\Desktop\SkyVale_Repo\VFW\VFW Notes\VFW_Day1Notess\VFW_Day1Notess\bin\Debug\netcoreapp3.0\VFW_Day1Notess.runtimeconfig.json
+\\vmware-host\Shared Folders\Desktop\SkyVale_Repo\VFW\VFW Notes\VFW_Day1Notess\VFW_Day1Notess\bin\Debug\netcoreapp3.0\VFW_Day1Notess.runtimeconfig.dev.json
+\\vmware-host\Shared Folders\Desktop\SkyVale_Repo\VFW\VFW Notes\VFW_Day1Notess\VFW_Day1Notess\bin\Debug\netcoreapp3.0\VFW_Day1Notess.dll
+\\vmware-host\Shared Folders\Desktop\SkyVale_Repo\VFW\VFW Notes\VFW_Day1Notess\VFW_Day1Notess\bin\Debug\netcoreapp3.0\VFW_Day1Notess.pdb
+\\vmware-host\Shared Folders\Desktop\SkyVale_Repo\VFW\VFW Notes\VFW_Day1Notess\VFW_Day1Notess\obj\Debug\netcoreapp3.0\VFW_Day1Notess.csprojAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\SkyVale_Repo\VFW\VFW Notes\VFW_Day1Notess\VFW_Day1Notess\obj\Debug\netcoreapp3.0\VFW_Day1Notess.AssemblyInfoInputs.cache
+\\vmware-host\Shared Folders\Desktop\SkyVale_Repo\VFW\VFW Notes\VFW_Day1Notess\VFW_Day1Notess\obj\Debug\netcoreapp3.0\VFW_Day1Notess.AssemblyInfo.cs
+\\vmware-host\Shared Folders\Desktop\SkyVale_Repo\VFW\VFW Notes\VFW_Day1Notess\VFW_Day1Notess\obj\Debug\netcoreapp3.0\VFW_Day1Notess.dll
+\\vmware-host\Shared Folders\Desktop\SkyVale_Repo\VFW\VFW Notes\VFW_Day1Notess\VFW_Day1Notess\obj\Debug\netcoreapp3.0\VFW_Day1Notess.pdb

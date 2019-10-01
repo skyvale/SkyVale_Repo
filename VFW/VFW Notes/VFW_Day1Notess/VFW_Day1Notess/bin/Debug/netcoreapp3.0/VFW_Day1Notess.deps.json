@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "VFW_Day1Notess/1.0.0": {
+        "runtime": {
+          "VFW_Day1Notess.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "VFW_Day1Notess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
