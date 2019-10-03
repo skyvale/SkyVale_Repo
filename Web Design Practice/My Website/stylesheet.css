@@ -35,7 +35,10 @@ nav {
     display: flex;
 }
 ul{
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+
 }
 a:link {
     color: white;
@@ -50,15 +53,16 @@ a:hover {
     text-decoration: underline;
     color: rgb(122, 122, 206);
 }
-li {
+.navi {
     
     background: rgb(34, 33, 107);
     border-radius: 15px;
+    border-style: solid;
     display: inline-block;
-    margin: auto;
     list-style-type: none;
     text-align: center;
     padding: 20px;
+    width: 50%;
 }
 .page-title {
     display: table;
