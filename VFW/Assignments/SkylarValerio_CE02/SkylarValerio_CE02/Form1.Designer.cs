@@ -32,26 +32,26 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.displayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBoxInfo = new System.Windows.Forms.GroupBox();
-            this.listBoxGood = new System.Windows.Forms.ListBox();
-            this.listBoxEvil = new System.Windows.Forms.ListBox();
-            this.lblName = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.lblClan = new System.Windows.Forms.Label();
-            this.cmBoxClan = new System.Windows.Forms.ComboBox();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnEvil = new System.Windows.Forms.Button();
+            this.btnGood = new System.Windows.Forms.Button();
+            this.chkFormer = new System.Windows.Forms.CheckBox();
+            this.rdButtFemale = new System.Windows.Forms.RadioButton();
+            this.rdButtMale = new System.Windows.Forms.RadioButton();
+            this.lblGender = new System.Windows.Forms.Label();
             this.cmBoxRole = new System.Windows.Forms.ComboBox();
             this.lblRole = new System.Windows.Forms.Label();
-            this.lblGender = new System.Windows.Forms.Label();
-            this.rdButtMale = new System.Windows.Forms.RadioButton();
-            this.rdButtFemale = new System.Windows.Forms.RadioButton();
-            this.chkFormer = new System.Windows.Forms.CheckBox();
-            this.btnGood = new System.Windows.Forms.Button();
-            this.btnEvil = new System.Windows.Forms.Button();
-            this.btnClear = new System.Windows.Forms.Button();
+            this.cmBoxClan = new System.Windows.Forms.ComboBox();
+            this.lblClan = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.lblName = new System.Windows.Forms.Label();
+            this.listBoxGood = new System.Windows.Forms.ListBox();
+            this.listBoxEvil = new System.Windows.Forms.ListBox();
             this.lblGood = new System.Windows.Forms.Label();
             this.lblEvil = new System.Windows.Forms.Label();
             this.btnEviltoGood = new System.Windows.Forms.Button();
@@ -88,6 +88,7 @@
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
             this.loadToolStripMenuItem.Size = new System.Drawing.Size(324, 38);
             this.loadToolStripMenuItem.Text = "Load";
+            this.loadToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem
             // 
@@ -96,6 +97,11 @@
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(321, 6);
+            // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
@@ -103,23 +109,18 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(321, 6);
-            // 
             // statsToolStripMenuItem
             // 
             this.statsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.displayToolStripMenuItem});
             this.statsToolStripMenuItem.Name = "statsToolStripMenuItem";
-            this.statsToolStripMenuItem.Size = new System.Drawing.Size(77, 36);
+            this.statsToolStripMenuItem.Size = new System.Drawing.Size(77, 38);
             this.statsToolStripMenuItem.Text = "Stats";
             // 
             // displayToolStripMenuItem
             // 
             this.displayToolStripMenuItem.Name = "displayToolStripMenuItem";
-            this.displayToolStripMenuItem.Size = new System.Drawing.Size(324, 38);
+            this.displayToolStripMenuItem.Size = new System.Drawing.Size(191, 38);
             this.displayToolStripMenuItem.Text = "Display";
             // 
             // groupBoxInfo
@@ -144,66 +145,76 @@
             this.groupBoxInfo.TabStop = false;
             this.groupBoxInfo.Text = "Information";
             // 
-            // listBoxGood
+            // btnClear
             // 
-            this.listBoxGood.FormattingEnabled = true;
-            this.listBoxGood.ItemHeight = 25;
-            this.listBoxGood.Location = new System.Drawing.Point(619, 116);
-            this.listBoxGood.Name = "listBoxGood";
-            this.listBoxGood.Size = new System.Drawing.Size(506, 629);
-            this.listBoxGood.TabIndex = 2;
-            this.listBoxGood.TabStop = false;
-            this.listBoxGood.Click += new System.EventHandler(this.listBoxGood_Click);
+            this.btnClear.Location = new System.Drawing.Point(468, 629);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(95, 47);
+            this.btnClear.TabIndex = 9;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // listBoxEvil
+            // btnEvil
             // 
-            this.listBoxEvil.FormattingEnabled = true;
-            this.listBoxEvil.ItemHeight = 25;
-            this.listBoxEvil.Location = new System.Drawing.Point(1247, 116);
-            this.listBoxEvil.Name = "listBoxEvil";
-            this.listBoxEvil.Size = new System.Drawing.Size(506, 629);
-            this.listBoxEvil.TabIndex = 3;
-            this.listBoxEvil.TabStop = false;
-            this.listBoxEvil.Click += new System.EventHandler(this.listBoxEvil_Click);
+            this.btnEvil.Location = new System.Drawing.Point(154, 551);
+            this.btnEvil.Name = "btnEvil";
+            this.btnEvil.Size = new System.Drawing.Size(276, 54);
+            this.btnEvil.TabIndex = 8;
+            this.btnEvil.Text = "Evil";
+            this.btnEvil.UseVisualStyleBackColor = true;
+            this.btnEvil.Click += new System.EventHandler(this.btnEvil_Click);
             // 
-            // lblName
+            // btnGood
             // 
-            this.lblName.AutoSize = true;
-            this.lblName.Location = new System.Drawing.Point(40, 63);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(74, 25);
-            this.lblName.TabIndex = 0;
-            this.lblName.Text = "Name:";
+            this.btnGood.Location = new System.Drawing.Point(154, 451);
+            this.btnGood.Name = "btnGood";
+            this.btnGood.Size = new System.Drawing.Size(276, 54);
+            this.btnGood.TabIndex = 7;
+            this.btnGood.Text = "Good";
+            this.btnGood.UseVisualStyleBackColor = true;
+            this.btnGood.Click += new System.EventHandler(this.btnGood_Click);
             // 
-            // txtName
+            // chkFormer
             // 
-            this.txtName.Location = new System.Drawing.Point(154, 63);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(276, 31);
-            this.txtName.TabIndex = 1;
+            this.chkFormer.AutoSize = true;
+            this.chkFormer.Location = new System.Drawing.Point(154, 371);
+            this.chkFormer.Name = "chkFormer";
+            this.chkFormer.Size = new System.Drawing.Size(296, 29);
+            this.chkFormer.TabIndex = 6;
+            this.chkFormer.Text = "Former Rogue or Kittypet?";
+            this.chkFormer.UseVisualStyleBackColor = true;
             // 
-            // lblClan
+            // rdButtFemale
             // 
-            this.lblClan.AutoSize = true;
-            this.lblClan.Location = new System.Drawing.Point(40, 206);
-            this.lblClan.Name = "lblClan";
-            this.lblClan.Size = new System.Drawing.Size(62, 25);
-            this.lblClan.TabIndex = 2;
-            this.lblClan.Text = "Clan:";
+            this.rdButtFemale.AutoSize = true;
+            this.rdButtFemale.Location = new System.Drawing.Point(281, 133);
+            this.rdButtFemale.Name = "rdButtFemale";
+            this.rdButtFemale.Size = new System.Drawing.Size(114, 29);
+            this.rdButtFemale.TabIndex = 3;
+            this.rdButtFemale.TabStop = true;
+            this.rdButtFemale.Text = "Female";
+            this.rdButtFemale.UseVisualStyleBackColor = true;
             // 
-            // cmBoxClan
+            // rdButtMale
             // 
-            this.cmBoxClan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmBoxClan.FormattingEnabled = true;
-            this.cmBoxClan.Items.AddRange(new object[] {
-            "Thunderclan",
-            "Riverclan",
-            "Windclan",
-            "Shadowclan"});
-            this.cmBoxClan.Location = new System.Drawing.Point(154, 203);
-            this.cmBoxClan.Name = "cmBoxClan";
-            this.cmBoxClan.Size = new System.Drawing.Size(276, 33);
-            this.cmBoxClan.TabIndex = 4;
+            this.rdButtMale.AutoSize = true;
+            this.rdButtMale.Location = new System.Drawing.Point(154, 133);
+            this.rdButtMale.Name = "rdButtMale";
+            this.rdButtMale.Size = new System.Drawing.Size(90, 29);
+            this.rdButtMale.TabIndex = 2;
+            this.rdButtMale.TabStop = true;
+            this.rdButtMale.Text = "Male";
+            this.rdButtMale.UseVisualStyleBackColor = true;
+            // 
+            // lblGender
+            // 
+            this.lblGender.AutoSize = true;
+            this.lblGender.Location = new System.Drawing.Point(40, 133);
+            this.lblGender.Name = "lblGender";
+            this.lblGender.Size = new System.Drawing.Size(89, 25);
+            this.lblGender.TabIndex = 6;
+            this.lblGender.Text = "Gender:";
             // 
             // cmBoxRole
             // 
@@ -231,76 +242,66 @@
             this.lblRole.TabIndex = 4;
             this.lblRole.Text = "Role:";
             // 
-            // lblGender
+            // cmBoxClan
             // 
-            this.lblGender.AutoSize = true;
-            this.lblGender.Location = new System.Drawing.Point(40, 133);
-            this.lblGender.Name = "lblGender";
-            this.lblGender.Size = new System.Drawing.Size(89, 25);
-            this.lblGender.TabIndex = 6;
-            this.lblGender.Text = "Gender:";
+            this.cmBoxClan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmBoxClan.FormattingEnabled = true;
+            this.cmBoxClan.Items.AddRange(new object[] {
+            "Thunderclan",
+            "Riverclan",
+            "Windclan",
+            "Shadowclan"});
+            this.cmBoxClan.Location = new System.Drawing.Point(154, 203);
+            this.cmBoxClan.Name = "cmBoxClan";
+            this.cmBoxClan.Size = new System.Drawing.Size(276, 33);
+            this.cmBoxClan.TabIndex = 4;
             // 
-            // rdButtMale
+            // lblClan
             // 
-            this.rdButtMale.AutoSize = true;
-            this.rdButtMale.Location = new System.Drawing.Point(154, 133);
-            this.rdButtMale.Name = "rdButtMale";
-            this.rdButtMale.Size = new System.Drawing.Size(90, 29);
-            this.rdButtMale.TabIndex = 2;
-            this.rdButtMale.TabStop = true;
-            this.rdButtMale.Text = "Male";
-            this.rdButtMale.UseVisualStyleBackColor = true;
+            this.lblClan.AutoSize = true;
+            this.lblClan.Location = new System.Drawing.Point(40, 206);
+            this.lblClan.Name = "lblClan";
+            this.lblClan.Size = new System.Drawing.Size(62, 25);
+            this.lblClan.TabIndex = 2;
+            this.lblClan.Text = "Clan:";
             // 
-            // rdButtFemale
+            // txtName
             // 
-            this.rdButtFemale.AutoSize = true;
-            this.rdButtFemale.Location = new System.Drawing.Point(281, 133);
-            this.rdButtFemale.Name = "rdButtFemale";
-            this.rdButtFemale.Size = new System.Drawing.Size(114, 29);
-            this.rdButtFemale.TabIndex = 3;
-            this.rdButtFemale.TabStop = true;
-            this.rdButtFemale.Text = "Female";
-            this.rdButtFemale.UseVisualStyleBackColor = true;
+            this.txtName.Location = new System.Drawing.Point(154, 63);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(276, 31);
+            this.txtName.TabIndex = 1;
             // 
-            // chkFormer
+            // lblName
             // 
-            this.chkFormer.AutoSize = true;
-            this.chkFormer.Location = new System.Drawing.Point(154, 371);
-            this.chkFormer.Name = "chkFormer";
-            this.chkFormer.Size = new System.Drawing.Size(296, 29);
-            this.chkFormer.TabIndex = 6;
-            this.chkFormer.Text = "Former Rogue or Kittypet?";
-            this.chkFormer.UseVisualStyleBackColor = true;
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(40, 63);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(74, 25);
+            this.lblName.TabIndex = 0;
+            this.lblName.Text = "Name:";
             // 
-            // btnGood
+            // listBoxGood
             // 
-            this.btnGood.Location = new System.Drawing.Point(154, 451);
-            this.btnGood.Name = "btnGood";
-            this.btnGood.Size = new System.Drawing.Size(276, 54);
-            this.btnGood.TabIndex = 7;
-            this.btnGood.Text = "Good";
-            this.btnGood.UseVisualStyleBackColor = true;
-            this.btnGood.Click += new System.EventHandler(this.btnGood_Click);
+            this.listBoxGood.FormattingEnabled = true;
+            this.listBoxGood.ItemHeight = 25;
+            this.listBoxGood.Location = new System.Drawing.Point(619, 116);
+            this.listBoxGood.Name = "listBoxGood";
+            this.listBoxGood.Size = new System.Drawing.Size(506, 629);
+            this.listBoxGood.TabIndex = 2;
+            this.listBoxGood.TabStop = false;
+            this.listBoxGood.Click += new System.EventHandler(this.listBoxGood_Click);
             // 
-            // btnEvil
+            // listBoxEvil
             // 
-            this.btnEvil.Location = new System.Drawing.Point(154, 551);
-            this.btnEvil.Name = "btnEvil";
-            this.btnEvil.Size = new System.Drawing.Size(276, 54);
-            this.btnEvil.TabIndex = 8;
-            this.btnEvil.Text = "Evil";
-            this.btnEvil.UseVisualStyleBackColor = true;
-            this.btnEvil.Click += new System.EventHandler(this.btnEvil_Click);
-            // 
-            // btnClear
-            // 
-            this.btnClear.Location = new System.Drawing.Point(468, 629);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(95, 47);
-            this.btnClear.TabIndex = 9;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            this.listBoxEvil.FormattingEnabled = true;
+            this.listBoxEvil.ItemHeight = 25;
+            this.listBoxEvil.Location = new System.Drawing.Point(1247, 116);
+            this.listBoxEvil.Name = "listBoxEvil";
+            this.listBoxEvil.Size = new System.Drawing.Size(506, 629);
+            this.listBoxEvil.TabIndex = 3;
+            this.listBoxEvil.TabStop = false;
+            this.listBoxEvil.Click += new System.EventHandler(this.listBoxEvil_Click);
             // 
             // lblGood
             // 

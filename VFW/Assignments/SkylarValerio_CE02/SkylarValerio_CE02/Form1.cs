@@ -135,21 +135,83 @@ namespace SkylarValerio_CE02
                 // write each item in good listbox to writer
                 foreach(Character item in listBoxGood.Items)
                 {
-                    sw.WriteLine(item.Name + "," + item.Gender + "," + item.Clan + "," + item.Role + "," + item.Former);                 
+                    sw.WriteLine("good," + item.Name + "," + item.Gender + "," + item.Clan + "," + item.Role + "," + item.Former);                 
                 }
 
                 // write each item in evil listbox to writer
                 foreach (Character item in listBoxEvil.Items)
                 {
-                    sw.WriteLine(item.Name + "," + item.Gender + "," + item.Clan + "," + item.Role + "," + item.Former);
+                    sw.WriteLine("evil," + item.Name + "," + item.Gender + "," + item.Clan + "," + item.Role + "," + item.Former);
                 }
-
-                //!TODO figure out why its bad ^
 
                 // close streamwriter
                 sw.Close();
                 stream.Close();
             }
+        }
+
+
+        // loads the character objects from the txt file and repopulates the listboxes
+        private void loadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog ofd = new OpenFileDialog())
+            {
+                // filter the file type
+                ofd.Filter = "txt file | *.txt";
+                ofd.RestoreDirectory = true;
+
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    // get the file path
+                    var filePath = ofd.FileName;
+
+                    // use streamreader to read the contents of the file
+                    var fileStream = ofd.OpenFile();
+
+                    using (StreamReader reader = new StreamReader(fileStream))
+                    {
+                        string readString = "";
+                        List<string> readList = new List<string>();
+
+                        while ((readString = reader.ReadLine()) != null)
+                        {
+                            readList.Add(readString);
+                        }
+
+                        txtName.Text = readList[0];
+
+                        // checks if male or female radio btn was checked or not
+                        if (readList[1] == "False")
+                        {
+                            rdButtMale.Checked = true;
+                        }
+                        else if (readList[2] == "True")
+                        {
+                            rdButtMale.Checked = true;
+                        }
+
+                        cmBoxClan.Text = readList[2];
+                        cmBoxRole.Text = readList[3];
+
+                        // checks if rogue/kittypet checkbox is checked or not
+                        if (readList[4] == "False")
+                        {
+                            chkFormer.Checked = false;
+                        }
+                        else if (readList[4] == "True")
+                        {
+                            chkFormer.Checked = true;
+                        }
+
+                        //!TODO determine whether or not the loaded objects are in the Good listbox or Evil listbox
+
+                    }// streamreader using loop
+
+
+                }
+
+
+            }//ofd using loop
         }
     }
 }
