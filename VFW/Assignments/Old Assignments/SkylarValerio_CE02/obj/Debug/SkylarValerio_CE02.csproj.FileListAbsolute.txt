@@ -9,3 +9,14 @@ C:\Users\skyla\OneDrive\Desktop\Visual Studio\SkylarValerio_CE02\obj\Debug\Skyla
 C:\Users\skyla\OneDrive\Desktop\Visual Studio\SkylarValerio_CE02\obj\Debug\SkylarValerio_CE02.exe
 C:\Users\skyla\OneDrive\Desktop\Visual Studio\SkylarValerio_CE02\obj\Debug\SkylarValerio_CE02.pdb
 C:\Users\skyla\OneDrive\Desktop\Visual Studio\SkylarValerio_CE02\obj\Debug\SkylarValerio_CE02.FighterCount.resources
+C:\Users\skyla\OneDrive\Desktop\SkyVale_Repo\VFW\Assignments\Old Assignments\SkylarValerio_CE02\bin\Debug\SkylarValerio_CE02.exe.config
+C:\Users\skyla\OneDrive\Desktop\SkyVale_Repo\VFW\Assignments\Old Assignments\SkylarValerio_CE02\bin\Debug\SkylarValerio_CE02.exe
+C:\Users\skyla\OneDrive\Desktop\SkyVale_Repo\VFW\Assignments\Old Assignments\SkylarValerio_CE02\bin\Debug\SkylarValerio_CE02.pdb
+C:\Users\skyla\OneDrive\Desktop\SkyVale_Repo\VFW\Assignments\Old Assignments\SkylarValerio_CE02\obj\Debug\SkylarValerio_CE02.csprojAssemblyReference.cache
+C:\Users\skyla\OneDrive\Desktop\SkyVale_Repo\VFW\Assignments\Old Assignments\SkylarValerio_CE02\obj\Debug\SkylarValerio_CE02.FighterCount.resources
+C:\Users\skyla\OneDrive\Desktop\SkyVale_Repo\VFW\Assignments\Old Assignments\SkylarValerio_CE02\obj\Debug\SkylarValerio_CE02.ArtFight_2019.resources
+C:\Users\skyla\OneDrive\Desktop\SkyVale_Repo\VFW\Assignments\Old Assignments\SkylarValerio_CE02\obj\Debug\SkylarValerio_CE02.Properties.Resources.resources
+C:\Users\skyla\OneDrive\Desktop\SkyVale_Repo\VFW\Assignments\Old Assignments\SkylarValerio_CE02\obj\Debug\SkylarValerio_CE02.csproj.GenerateResource.cache
+C:\Users\skyla\OneDrive\Desktop\SkyVale_Repo\VFW\Assignments\Old Assignments\SkylarValerio_CE02\obj\Debug\SkylarValerio_CE02.csproj.CoreCompileInputs.cache
+C:\Users\skyla\OneDrive\Desktop\SkyVale_Repo\VFW\Assignments\Old Assignments\SkylarValerio_CE02\obj\Debug\SkylarValerio_CE02.exe
+C:\Users\skyla\OneDrive\Desktop\SkyVale_Repo\VFW\Assignments\Old Assignments\SkylarValerio_CE02\obj\Debug\SkylarValerio_CE02.pdb
