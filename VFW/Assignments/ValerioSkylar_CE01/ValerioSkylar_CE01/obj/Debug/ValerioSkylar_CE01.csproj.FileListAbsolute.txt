@@ -8,3 +8,13 @@
 \\vmware-host\Shared Folders\Desktop\ValerioSkylar_CE01\ValerioSkylar_CE01\obj\Debug\ValerioSkylar_CE01.csproj.CoreCompileInputs.cache
 \\vmware-host\Shared Folders\Desktop\ValerioSkylar_CE01\ValerioSkylar_CE01\obj\Debug\ValerioSkylar_CE01.exe
 \\vmware-host\Shared Folders\Desktop\ValerioSkylar_CE01\ValerioSkylar_CE01\obj\Debug\ValerioSkylar_CE01.pdb
+C:\Users\skyla\OneDrive\Desktop\SkyVale_Repo\VFW\Assignments\ValerioSkylar_CE01\ValerioSkylar_CE01\bin\Debug\ValerioSkylar_CE01.exe.config
+C:\Users\skyla\OneDrive\Desktop\SkyVale_Repo\VFW\Assignments\ValerioSkylar_CE01\ValerioSkylar_CE01\bin\Debug\ValerioSkylar_CE01.exe
+C:\Users\skyla\OneDrive\Desktop\SkyVale_Repo\VFW\Assignments\ValerioSkylar_CE01\ValerioSkylar_CE01\bin\Debug\ValerioSkylar_CE01.pdb
+C:\Users\skyla\OneDrive\Desktop\SkyVale_Repo\VFW\Assignments\ValerioSkylar_CE01\ValerioSkylar_CE01\obj\Debug\ValerioSkylar_CE01.csprojAssemblyReference.cache
+C:\Users\skyla\OneDrive\Desktop\SkyVale_Repo\VFW\Assignments\ValerioSkylar_CE01\ValerioSkylar_CE01\obj\Debug\ValerioSkylar_CE01.Form1.resources
+C:\Users\skyla\OneDrive\Desktop\SkyVale_Repo\VFW\Assignments\ValerioSkylar_CE01\ValerioSkylar_CE01\obj\Debug\ValerioSkylar_CE01.Properties.Resources.resources
+C:\Users\skyla\OneDrive\Desktop\SkyVale_Repo\VFW\Assignments\ValerioSkylar_CE01\ValerioSkylar_CE01\obj\Debug\ValerioSkylar_CE01.csproj.GenerateResource.cache
+C:\Users\skyla\OneDrive\Desktop\SkyVale_Repo\VFW\Assignments\ValerioSkylar_CE01\ValerioSkylar_CE01\obj\Debug\ValerioSkylar_CE01.csproj.CoreCompileInputs.cache
+C:\Users\skyla\OneDrive\Desktop\SkyVale_Repo\VFW\Assignments\ValerioSkylar_CE01\ValerioSkylar_CE01\obj\Debug\ValerioSkylar_CE01.exe
+C:\Users\skyla\OneDrive\Desktop\SkyVale_Repo\VFW\Assignments\ValerioSkylar_CE01\ValerioSkylar_CE01\obj\Debug\ValerioSkylar_CE01.pdb
