@@ -59,8 +59,7 @@
             this.objectToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(230, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(464, 42);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -69,13 +68,13 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 22);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(64, 38);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(151, 38);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -85,20 +84,20 @@
             this.menuBtnCreate,
             this.menuBtnClearAll});
             this.objectToolStripMenuItem.Name = "objectToolStripMenuItem";
-            this.objectToolStripMenuItem.Size = new System.Drawing.Size(37, 22);
+            this.objectToolStripMenuItem.Size = new System.Drawing.Size(62, 38);
             this.objectToolStripMenuItem.Text = "List";
             // 
             // menuBtnCreate
             // 
             this.menuBtnCreate.Name = "menuBtnCreate";
-            this.menuBtnCreate.Size = new System.Drawing.Size(180, 22);
+            this.menuBtnCreate.Size = new System.Drawing.Size(324, 38);
             this.menuBtnCreate.Text = "Display";
             this.menuBtnCreate.Click += new System.EventHandler(this.menuBtnCreate_Click);
             // 
             // menuBtnClearAll
             // 
             this.menuBtnClearAll.Name = "menuBtnClearAll";
-            this.menuBtnClearAll.Size = new System.Drawing.Size(180, 22);
+            this.menuBtnClearAll.Size = new System.Drawing.Size(324, 38);
             this.menuBtnClearAll.Text = "Clear All";
             // 
             // groupBox
@@ -116,21 +115,21 @@
             this.groupBox.Controls.Add(this.txtFirstName);
             this.groupBox.Controls.Add(this.label1);
             this.groupBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox.Location = new System.Drawing.Point(0, 24);
-            this.groupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox.Location = new System.Drawing.Point(0, 42);
+            this.groupBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox.Name = "groupBox";
-            this.groupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox.Size = new System.Drawing.Size(230, 247);
+            this.groupBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox.Size = new System.Drawing.Size(464, 479);
             this.groupBox.TabIndex = 1;
             this.groupBox.TabStop = false;
             this.groupBox.Text = "Information";
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(131, 214);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClear.Location = new System.Drawing.Point(262, 412);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(90, 28);
+            this.btnClear.Size = new System.Drawing.Size(180, 54);
             this.btnClear.TabIndex = 8;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -138,10 +137,10 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(14, 214);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdd.Location = new System.Drawing.Point(28, 412);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(90, 28);
+            this.btnAdd.Size = new System.Drawing.Size(180, 54);
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -150,10 +149,10 @@
             // chkAbove21
             // 
             this.chkAbove21.AutoSize = true;
-            this.chkAbove21.Location = new System.Drawing.Point(88, 177);
-            this.chkAbove21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chkAbove21.Location = new System.Drawing.Point(176, 340);
+            this.chkAbove21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chkAbove21.Name = "chkAbove21";
-            this.chkAbove21.Size = new System.Drawing.Size(116, 17);
+            this.chkAbove21.Size = new System.Drawing.Size(225, 29);
             this.chkAbove21.TabIndex = 6;
             this.chkAbove21.Text = "Are you above 21?";
             this.chkAbove21.UseVisualStyleBackColor = true;
@@ -161,10 +160,10 @@
             // rdFemale
             // 
             this.rdFemale.AutoSize = true;
-            this.rdFemale.Location = new System.Drawing.Point(154, 101);
-            this.rdFemale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdFemale.Location = new System.Drawing.Point(308, 194);
+            this.rdFemale.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdFemale.Name = "rdFemale";
-            this.rdFemale.Size = new System.Drawing.Size(59, 17);
+            this.rdFemale.Size = new System.Drawing.Size(114, 29);
             this.rdFemale.TabIndex = 4;
             this.rdFemale.TabStop = true;
             this.rdFemale.Text = "Female";
@@ -173,10 +172,10 @@
             // rdMale
             // 
             this.rdMale.AutoSize = true;
-            this.rdMale.Location = new System.Drawing.Point(88, 101);
-            this.rdMale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdMale.Location = new System.Drawing.Point(176, 194);
+            this.rdMale.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rdMale.Name = "rdMale";
-            this.rdMale.Size = new System.Drawing.Size(48, 17);
+            this.rdMale.Size = new System.Drawing.Size(90, 29);
             this.rdMale.TabIndex = 3;
             this.rdMale.TabStop = true;
             this.rdMale.Text = "Male";
@@ -185,10 +184,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 101);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(36, 194);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 13);
+            this.label4.Size = new System.Drawing.Size(89, 25);
             this.label4.TabIndex = 6;
             this.label4.Text = "Gender:";
             // 
@@ -220,66 +219,66 @@
             "Sports Management",
             "Sports Marketing",
             "Web Development and Design"});
-            this.comBoxProgram.Location = new System.Drawing.Point(88, 136);
-            this.comBoxProgram.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comBoxProgram.Location = new System.Drawing.Point(176, 262);
+            this.comBoxProgram.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comBoxProgram.Name = "comBoxProgram";
-            this.comBoxProgram.Size = new System.Drawing.Size(134, 21);
+            this.comBoxProgram.Size = new System.Drawing.Size(264, 33);
             this.comBoxProgram.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 137);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(36, 263);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 13);
+            this.label3.Size = new System.Drawing.Size(99, 25);
             this.label3.TabIndex = 4;
             this.label3.Text = "Program:";
             // 
             // txtLastName
             // 
-            this.txtLastName.Location = new System.Drawing.Point(88, 66);
-            this.txtLastName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLastName.Location = new System.Drawing.Point(176, 127);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(134, 20);
+            this.txtLastName.Size = new System.Drawing.Size(264, 31);
             this.txtLastName.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 68);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(36, 131);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.Size = new System.Drawing.Size(112, 25);
             this.label2.TabIndex = 2;
             this.label2.Text = "Lastname:";
             // 
             // txtFirstName
             // 
-            this.txtFirstName.Location = new System.Drawing.Point(88, 30);
-            this.txtFirstName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFirstName.Location = new System.Drawing.Point(176, 58);
+            this.txtFirstName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(134, 20);
+            this.txtFirstName.Size = new System.Drawing.Size(264, 31);
             this.txtFirstName.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 32);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(36, 62);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
+            this.label1.Size = new System.Drawing.Size(113, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Firstname:";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(230, 271);
+            this.ClientSize = new System.Drawing.Size(464, 521);
             this.Controls.Add(this.groupBox);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Full Sail Students";

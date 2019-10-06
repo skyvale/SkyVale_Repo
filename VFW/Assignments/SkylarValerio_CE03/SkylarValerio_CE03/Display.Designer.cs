@@ -42,8 +42,8 @@
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            this.toolStrip1.Size = new System.Drawing.Size(236, 25);
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0);
+            this.toolStrip1.Size = new System.Drawing.Size(472, 39);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -53,29 +53,30 @@
             this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(71, 22);
+            this.toolStripButton1.Size = new System.Drawing.Size(123, 36);
             this.toolStripButton1.Text = "Clear All";
             // 
             // listBoxStudents
             // 
             this.listBoxStudents.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBoxStudents.FormattingEnabled = true;
-            this.listBoxStudents.Location = new System.Drawing.Point(0, 25);
-            this.listBoxStudents.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.listBoxStudents.ItemHeight = 25;
+            this.listBoxStudents.Location = new System.Drawing.Point(0, 39);
+            this.listBoxStudents.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listBoxStudents.Name = "listBoxStudents";
-            this.listBoxStudents.Size = new System.Drawing.Size(236, 237);
+            this.listBoxStudents.Size = new System.Drawing.Size(472, 465);
             this.listBoxStudents.TabIndex = 1;
             this.listBoxStudents.TabStop = false;
             this.listBoxStudents.SelectedIndexChanged += new System.EventHandler(this.ListBoxStudents_SelectedIndexChanged);
             // 
             // Display
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(236, 262);
+            this.ClientSize = new System.Drawing.Size(472, 504);
             this.Controls.Add(this.listBoxStudents);
             this.Controls.Add(this.toolStrip1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Display";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Display";

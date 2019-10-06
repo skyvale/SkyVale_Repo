@@ -16,6 +16,9 @@ namespace SkylarValerio_CE03
         // delegate to repopulate the inputs when the user chooses an item from the ListBox
         public event EventHandler<StudentEventArgs> RepopulateInputs;
 
+        // unchecks the display menustrip button
+        public event EventHandler UncheckDisplayButton;
+
         // initiate the Display Form
         public Display()
         {
