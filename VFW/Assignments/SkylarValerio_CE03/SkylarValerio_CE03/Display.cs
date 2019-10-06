@@ -12,7 +12,9 @@ namespace SkylarValerio_CE03
 {
     public partial class Display : Form
     {
-        public event EventHandler CloseChildForm;
+
+        // delegate to repopulate the inputs when the user chooses an item from the ListBox
+        public event EventHandler<StudentEventArgs> RepopulateInputs;
 
         // initiate the Display Form
         public Display()
@@ -21,6 +23,7 @@ namespace SkylarValerio_CE03
         }
 
 
+        // executable method for AddToListBox eventhandler
         // the sender is the object version of Form1
         public void DisplayForm_AddStudent(object sender, EventArgs e)
         {
@@ -30,10 +33,25 @@ namespace SkylarValerio_CE03
                 listBoxStudents.Items.Add(student);
             }
         }
+        
 
-        private void Display_FormClosed(object sender, FormClosedEventArgs e)
+        private void ListBoxStudents_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // make new custom event
+            StudentEventArgs studentEvent = new StudentEventArgs();        
 
+            // gets the selected student
+            Student student = ((Student)listBoxStudents.SelectedItem);
+
+            // target the properties in one to the empty properties in the other
+            studentEvent.FirstName = student.FirstName;
+            studentEvent.LastName = student.LastName;
+            studentEvent.Gender = student.Gender;
+            studentEvent.Program = student.Program;
+            studentEvent.Above21 = student.Above21;
+
+            // invoke the repopulate index eventhandler with the custom event 
+            RepopulateInputs?.Invoke(this, studentEvent);
         }
     }
 }

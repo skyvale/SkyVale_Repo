@@ -16,8 +16,6 @@ namespace SkylarValerio_CE03
         // delegate to allow the student object to be added to the ListBox on the Display Form
         public event EventHandler AddToListBox;
 
-        // determines if the user closes the form
-        public event EventHandler IsClosed;
 
         // list to hold the Student objects (private)
         List<Student> studentList = new List<Student>();
@@ -87,6 +85,17 @@ namespace SkylarValerio_CE03
             chkAbove21.Checked = false;
         }
 
+        // executable method for RepopulateInputs eventhandler
+        public void DisplayForm_Repopulate(object sender, StudentEventArgs e)
+        {
+            // 'e' is the student
+            txtFirstName.Text = e.FirstName;
+            txtLastName.Text = e.LastName;
+            rdMale.Checked = e.Gender;
+            comBoxProgram.Text = e.Program;
+            chkAbove21.Checked = e.Above21;
+        }
+
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -111,11 +120,10 @@ namespace SkylarValerio_CE03
                 // subscribe to the AddStudent method in the Display Form
                 // so that you can add student to the ListBox there
                 AddToListBox += displayForm.DisplayForm_AddStudent;
-                IsClosed += displayForm.DisplayForm_CloseForm;
+                displayForm.RepopulateInputs += DisplayForm_Repopulate;
 
                 // raise the eventhandler
                 AddToListBox?.Invoke(this, new EventArgs());
-                IsClosed?.Invoke(this, new EventArgs());
 
                 // show the form (modeless)
                 displayForm.Show();
@@ -123,8 +131,7 @@ namespace SkylarValerio_CE03
             }
             else if (menuBtnCreate.Checked == true)
             {
-                // needs to close the open window when clicked
-                
+                // needs to close the open window when clicked               
 
             }
 
