@@ -8,6 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*
+ * Skylar Valerio
+ * 10.07.19
+ * CE03: Custom Events
+ * VFW
+ * 
+ * This is my listbox form, which displays the characters the user creates
+ * and allows them to choose from the list to repopulate Form1 with character info
+ */
+
 namespace SkylarValerio_CE03_2_
 {
     public partial class ListBox : Form
@@ -15,6 +25,24 @@ namespace SkylarValerio_CE03_2_
         // delegate to uncheck the Display button if the form is closed in any way
         public event EventHandler UncheckDisplay;
 
+        // delegate to clear the ListBox and the List in Form1 when
+        // 'ListBox - clear all' is clicked
+        public event EventHandler ListBoxClearAll;
+
+        // delegate to repopulate form when user chooses item from ListBox
+        public event EventHandler RepopulateInputs;
+
+        public List<Character> otherList = new List<Character>();
+
+        public Character GetCharacter
+        {           
+            get
+            {
+
+                return ((Character)listBoxCharacters.SelectedItem);
+
+            }
+        }
 
         public ListBox()
         {
@@ -63,10 +91,32 @@ namespace SkylarValerio_CE03_2_
         public void ListForm_ClearAll(object sender, EventArgs e)
         {
             // clears the listbox
-            listBoxCharacters.Items.Clear();
+            ClearListBox();
 
             // clears the list
             (sender as Form1).CharacterList.Clear();
+        }
+
+
+        // clears the listbox
+        public void ClearListBox()
+        {
+            listBoxCharacters.Items.Clear();
+        }
+
+
+        // clears the list and listbox when user hits 'clear all'
+        private void ToolStripClearAll_Click(object sender, EventArgs e)
+        {
+            // calls the method to clear the listbox and list
+            ListBoxClearAll?.Invoke(this, new EventArgs());
+        }
+
+
+        // when the user selects an item from the list, it will repopulate the Form1 inputs with the info
+        public void ListBoxCharacters_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            RepopulateInputs?.Invoke(this, new EventArgs());
         }
     }
 }

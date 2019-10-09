@@ -44,25 +44,30 @@
             this.toolStripClearAll});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(456, 39);
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.toolStrip1.Size = new System.Drawing.Size(228, 25);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripClearAll
             // 
             this.toolStripClearAll.Image = ((System.Drawing.Image)(resources.GetObject("toolStripClearAll.Image")));
+            this.toolStripClearAll.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripClearAll.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripClearAll.Name = "toolStripClearAll";
-            this.toolStripClearAll.Size = new System.Drawing.Size(139, 36);
+            this.toolStripClearAll.Size = new System.Drawing.Size(71, 22);
             this.toolStripClearAll.Text = "Clear All";
+            this.toolStripClearAll.Click += new System.EventHandler(this.ToolStripClearAll_Click);
             // 
             // groupBoxListBox
             // 
             this.groupBoxListBox.Controls.Add(this.listBoxCharacters);
             this.groupBoxListBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBoxListBox.Location = new System.Drawing.Point(0, 39);
+            this.groupBoxListBox.Location = new System.Drawing.Point(0, 25);
+            this.groupBoxListBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBoxListBox.Name = "groupBoxListBox";
-            this.groupBoxListBox.Size = new System.Drawing.Size(456, 553);
+            this.groupBoxListBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBoxListBox.Size = new System.Drawing.Size(228, 283);
             this.groupBoxListBox.TabIndex = 2;
             this.groupBoxListBox.TabStop = false;
             // 
@@ -70,20 +75,22 @@
             // 
             this.listBoxCharacters.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBoxCharacters.FormattingEnabled = true;
-            this.listBoxCharacters.ItemHeight = 25;
-            this.listBoxCharacters.Location = new System.Drawing.Point(3, 27);
+            this.listBoxCharacters.Location = new System.Drawing.Point(2, 15);
+            this.listBoxCharacters.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listBoxCharacters.Name = "listBoxCharacters";
-            this.listBoxCharacters.Size = new System.Drawing.Size(450, 523);
+            this.listBoxCharacters.Size = new System.Drawing.Size(224, 266);
             this.listBoxCharacters.TabIndex = 0;
             this.listBoxCharacters.TabStop = false;
+            this.listBoxCharacters.SelectedIndexChanged += new System.EventHandler(this.ListBoxCharacters_SelectedIndexChanged);
             // 
             // ListBox
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(456, 592);
+            this.ClientSize = new System.Drawing.Size(228, 308);
             this.Controls.Add(this.groupBoxListBox);
             this.Controls.Add(this.toolStrip1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ListBox";
             this.Text = "ListBox";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ListBox_FormClosed);

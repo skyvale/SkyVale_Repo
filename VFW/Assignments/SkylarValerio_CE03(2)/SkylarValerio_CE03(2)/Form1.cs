@@ -8,6 +8,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*
+ * Skylar Valerio
+ * 10.07.19
+ * CE03: Custom Events
+ * VFW
+ * 
+ * This is my main form, where the user enters input to create a new Pokemon-based character
+ */
+
 namespace SkylarValerio_CE03_2_
 {
     public partial class Form1 : Form
@@ -90,11 +99,17 @@ namespace SkylarValerio_CE03_2_
             // subscription for the PopulateListBox eventhandler
             PopulateListBox += listBox.ListForm_PopulateListBox;
 
+            // subscription for the RepopulateInputs eventhandler
+            listBox.RepopulateInputs += ListBox_RepopulateInputs;
+
             // subscription for AddToListBox eventhandler
             AddToListBox += listBox.ListForm_AddCharacter;
 
             // subscription to Form1ClearAll eventhandler
             Form1ClearAll += listBox.ListForm_ClearAll;
+
+            // subscription to the ListBoxClearAll eventhandler
+            listBox.ListBoxClearAll += ListBox_ListBoxClearAll;
 
             // check if the Display button is checked
             // if it is, then open the form, but if it isnt, close the form and uncheck it
@@ -116,6 +131,32 @@ namespace SkylarValerio_CE03_2_
             }
 
         }
+
+        
+        // eventhandler
+        // when called, this will repopulate the inputs on Form1
+        private void ListBox_RepopulateInputs(object sender, EventArgs e)
+        {
+            ListBox c = sender as ListBox;
+            CharacterInfo = c.GetCharacter;
+
+        }
+
+
+        // eventhandler
+        // clears the listbox on the ListBox form and the list
+        private void ListBox_ListBoxClearAll(object sender, EventArgs e)
+        {
+            // clears the inputs
+            ClearInputs();
+
+            // clears the list
+            characterList.Clear();
+
+            // clears the ListBox
+            (sender as ListBox).ClearListBox();
+        }
+
 
         // eventhandler method that will uncheck the display button when 
         // the listbox form is closed

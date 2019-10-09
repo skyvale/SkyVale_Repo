@@ -36,18 +36,18 @@
             this.btnDisplay = new System.Windows.Forms.ToolStripMenuItem();
             this.clearAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.rdMale = new System.Windows.Forms.RadioButton();
-            this.rdFemale = new System.Windows.Forms.RadioButton();
-            this.comBoxStarter = new System.Windows.Forms.ComboBox();
-            this.comBoxRegion = new System.Windows.Forms.ComboBox();
-            this.chkNewPlayer = new System.Windows.Forms.CheckBox();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.chkNewPlayer = new System.Windows.Forms.CheckBox();
+            this.comBoxRegion = new System.Windows.Forms.ComboBox();
+            this.comBoxStarter = new System.Windows.Forms.ComboBox();
+            this.rdFemale = new System.Windows.Forms.RadioButton();
+            this.rdMale = new System.Windows.Forms.RadioButton();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -112,56 +112,25 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
-            // label1
+            // btnClear
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.btnClear, "btnClear");
+            this.btnClear.Name = "btnClear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // label2
+            // btnAdd
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
+            resources.ApplyResources(this.btnAdd, "btnAdd");
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // label3
+            // chkNewPlayer
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.Name = "label4";
-            // 
-            // txtName
-            // 
-            resources.ApplyResources(this.txtName, "txtName");
-            this.txtName.Name = "txtName";
-            // 
-            // rdMale
-            // 
-            resources.ApplyResources(this.rdMale, "rdMale");
-            this.rdMale.Name = "rdMale";
-            this.rdMale.TabStop = true;
-            this.rdMale.UseVisualStyleBackColor = true;
-            // 
-            // rdFemale
-            // 
-            resources.ApplyResources(this.rdFemale, "rdFemale");
-            this.rdFemale.Name = "rdFemale";
-            this.rdFemale.TabStop = true;
-            this.rdFemale.UseVisualStyleBackColor = true;
-            // 
-            // comBoxStarter
-            // 
-            this.comBoxStarter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comBoxStarter.FormattingEnabled = true;
-            this.comBoxStarter.Items.AddRange(new object[] {
-            resources.GetString("comBoxStarter.Items"),
-            resources.GetString("comBoxStarter.Items1"),
-            resources.GetString("comBoxStarter.Items2"),
-            resources.GetString("comBoxStarter.Items3")});
-            resources.ApplyResources(this.comBoxStarter, "comBoxStarter");
-            this.comBoxStarter.Name = "comBoxStarter";
+            resources.ApplyResources(this.chkNewPlayer, "chkNewPlayer");
+            this.chkNewPlayer.Name = "chkNewPlayer";
+            this.chkNewPlayer.UseVisualStyleBackColor = true;
             // 
             // comBoxRegion
             // 
@@ -179,25 +148,56 @@
             resources.ApplyResources(this.comBoxRegion, "comBoxRegion");
             this.comBoxRegion.Name = "comBoxRegion";
             // 
-            // chkNewPlayer
+            // comBoxStarter
             // 
-            resources.ApplyResources(this.chkNewPlayer, "chkNewPlayer");
-            this.chkNewPlayer.Name = "chkNewPlayer";
-            this.chkNewPlayer.UseVisualStyleBackColor = true;
+            this.comBoxStarter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comBoxStarter.FormattingEnabled = true;
+            this.comBoxStarter.Items.AddRange(new object[] {
+            resources.GetString("comBoxStarter.Items"),
+            resources.GetString("comBoxStarter.Items1"),
+            resources.GetString("comBoxStarter.Items2"),
+            resources.GetString("comBoxStarter.Items3")});
+            resources.ApplyResources(this.comBoxStarter, "comBoxStarter");
+            this.comBoxStarter.Name = "comBoxStarter";
             // 
-            // btnAdd
+            // rdFemale
             // 
-            resources.ApplyResources(this.btnAdd, "btnAdd");
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            resources.ApplyResources(this.rdFemale, "rdFemale");
+            this.rdFemale.Name = "rdFemale";
+            this.rdFemale.TabStop = true;
+            this.rdFemale.UseVisualStyleBackColor = true;
             // 
-            // btnClear
+            // rdMale
             // 
-            resources.ApplyResources(this.btnClear, "btnClear");
-            this.btnClear.Name = "btnClear";
-            this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            resources.ApplyResources(this.rdMale, "rdMale");
+            this.rdMale.Name = "rdMale";
+            this.rdMale.TabStop = true;
+            this.rdMale.UseVisualStyleBackColor = true;
+            // 
+            // txtName
+            // 
+            resources.ApplyResources(this.txtName, "txtName");
+            this.txtName.Name = "txtName";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.Name = "label4";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
             // 
             // Form1
             // 
