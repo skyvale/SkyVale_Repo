@@ -17,6 +17,11 @@ namespace SkylarValerio_CE04
         // clears from listview and the list in Form1
         public event EventHandler ClearListView;
 
+        // delegate
+        // opens + repopulates the UserInput form when object in ListView is double-clicked
+        public event EventHandler RepopulateInputs;
+
+
         public ListViewForm()
         {
             InitializeComponent();
@@ -27,10 +32,11 @@ namespace SkylarValerio_CE04
         // adds a few default characters for testing sake
         private void AddDefaultCharacters()
         {
-            for (int i = 1; i < 3; i++)
+            for (int i = 1; i < 2; i++)
             {
                 ListViewItem lvi = new ListViewItem();
-                lvi.Name = "Default Character" + i;              
+                lvi.Text = "Default Character" + i;
+                lvi.Name = "Default Character" + i;                
                 lvi.ImageIndex = 0;
                 listViewCharacters.Items.Add(lvi);
 
@@ -50,18 +56,42 @@ namespace SkylarValerio_CE04
         // populates listview using the list from Form1
         public void ListView_Populate(object sender, EventArgs e)
         {
-            foreach (Trainer trainer in ((sender as Form1).TrainerList))
+            ListViewItem lvi = new ListViewItem();
+
+            if ((sender as Form1).TrainerList.Count > 0)
             {
-                listViewCharacters.Items.Add(trainer.Name);
+                Trainer info = (sender as Form1).TrainerList[0];
+
+                lvi.Text = info.Name;
+                lvi.ImageIndex = info.ImageIndex;
+                lvi.Tag = info;
+
+                listViewCharacters.Items.Add(lvi);
+
             }
+            
+            //Trainer info = (sender as Form1).TrainerList[(sender as Form1).TrainerList.Count-1];
+
         }
 
 
-        // invoke
+        // invoke ClearListView
         // when clicked this will clear both the listview and the Form1 list
         private void btnListViewClear_Click(object sender, EventArgs e)
         {
             ClearListView?.Invoke(this, new EventArgs());
+        }
+
+
+        // invoke RepopulateInputs
+        // user selects an item in the listview, which opens another form with information
+        private void ListViewCharacters_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            UserInput userInput = new UserInput();
+
+            RepopulateInputs?.Invoke(this, new EventArgs());
+
+            userInput.Show();
         }
     }
 }

@@ -46,14 +46,19 @@ namespace SkylarValerio_CE04
         {
             ListViewForm listViewForm = new ListViewForm();
 
+            UserInput userInput = new UserInput();
+
             // subscription to PopulateListView delegate
             PopulateListView += listViewForm.ListView_Populate;
 
             // subscription to ClearListView delegate in ListViewForm
             listViewForm.ClearListView += ListViewForm_ClearListView;
 
+            // subscription for RepopulateInputs delegate in ListViewForm
+            listViewForm.RepopulateInputs += userInput.UserInput_Repopulate;
+
             // invokes the PopulateListView event before the form opens
-            PopulateListView?.Invoke(this, new EventArgs());       
+            PopulateListView?.Invoke(this, new EventArgs());           
             
             // opens listViewForm
             listViewForm.Show();
@@ -79,7 +84,7 @@ namespace SkylarValerio_CE04
         private void ListViewForm_ClearListView(object sender, EventArgs e)
         {
             // clears the list
-            TrainerList.Clear();
+            TrainerList.Clear(); 
 
             // clears the listview
             ListViewForm lv = sender as ListViewForm;
@@ -93,7 +98,7 @@ namespace SkylarValerio_CE04
         private void UserInput_SaveToList(object sender, EventArgs e)
         {
             UserInput userInput = sender as UserInput;
-            TrainerList.Add(userInput.TrainerInfo);
+            trainerList.Add(userInput.TrainerInfo);
         }
     }
 }

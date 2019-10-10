@@ -46,7 +46,8 @@
             this.btnListViewClear});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(514, 45);
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            this.toolStrip1.Size = new System.Drawing.Size(262, 45);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -56,21 +57,24 @@
             this.btnListViewClear.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnListViewClear.Name = "btnListViewClear";
             this.btnListViewClear.Padding = new System.Windows.Forms.Padding(3);
-            this.btnListViewClear.Size = new System.Drawing.Size(111, 42);
+            this.btnListViewClear.Size = new System.Drawing.Size(76, 42);
             this.btnListViewClear.Text = "Clear";
             this.btnListViewClear.Click += new System.EventHandler(this.btnListViewClear_Click);
             // 
             // listViewCharacters
             // 
             this.listViewCharacters.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listViewCharacters.HideSelection = false;
             this.listViewCharacters.LargeImageList = this.imageList1;
-            this.listViewCharacters.Location = new System.Drawing.Point(3, 27);
+            this.listViewCharacters.Location = new System.Drawing.Point(2, 15);
+            this.listViewCharacters.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listViewCharacters.Name = "listViewCharacters";
-            this.listViewCharacters.Size = new System.Drawing.Size(483, 457);
+            this.listViewCharacters.Size = new System.Drawing.Size(240, 236);
             this.listViewCharacters.SmallImageList = this.imageList1;
             this.listViewCharacters.TabIndex = 1;
             this.listViewCharacters.UseCompatibleStateImageBehavior = false;
             this.listViewCharacters.View = System.Windows.Forms.View.SmallIcon;
+            this.listViewCharacters.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.ListViewCharacters_MouseDoubleClick);
             // 
             // imageList1
             // 
@@ -84,20 +88,23 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.listViewCharacters);
-            this.groupBox1.Location = new System.Drawing.Point(13, 43);
+            this.groupBox1.Location = new System.Drawing.Point(11, 47);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(489, 487);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(244, 253);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             // 
             // ListViewForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(514, 542);
+            this.ClientSize = new System.Drawing.Size(262, 306);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.toolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ListViewForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Character List";

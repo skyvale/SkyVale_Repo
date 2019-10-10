@@ -38,9 +38,8 @@ namespace SkylarValerio_CE04
 
             }
 
-
-
         }
+
 
 
         public UserInput()
@@ -61,12 +60,25 @@ namespace SkylarValerio_CE04
 
         }
 
-        // executable method
+        // invoke SaveToList
         // saves character to list in Form1
         private void btnSaveCharacter_Click(object sender, EventArgs e)
         {
             SaveToList?.Invoke(this, new EventArgs());
             this.Close();
         }
+
+
+        // eventhandler
+        // repopulates the inputs based on selected item in listview
+        public void UserInput_Repopulate(object sender, EventArgs e)
+        {
+            txtName.Text = TrainerInfo.Name;
+            rdMale.Checked = TrainerInfo.Gender;
+            comBoxTrainerType.Text = TrainerInfo.TrainerType;
+            comBoxStarter.Text = TrainerInfo.Starter;
+
+        }
+
     }
 }
