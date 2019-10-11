@@ -122,12 +122,13 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(39, 160);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 25);
+            this.label4.Size = new System.Drawing.Size(136, 25);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Gender:";
+            this.label4.Text = "MaleGender:";
             // 
             // comBoxStarter
             // 
+            this.comBoxStarter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comBoxStarter.FormattingEnabled = true;
             this.comBoxStarter.Items.AddRange(new object[] {
             "pikachu",
@@ -150,6 +151,7 @@
             // 
             // comBoxTrainerType
             // 
+            this.comBoxTrainerType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comBoxTrainerType.FormattingEnabled = true;
             this.comBoxTrainerType.Items.AddRange(new object[] {
             "Breeder",

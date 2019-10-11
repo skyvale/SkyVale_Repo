@@ -25,23 +25,16 @@ namespace SkylarValerio_CE04
         public ListViewForm()
         {
             InitializeComponent();
-            AddDefaultCharacters();
         }
 
 
-        // adds a few default characters for testing sake
-        private void AddDefaultCharacters()
+        // accessor for the items in the listview
+        public ListView GetListView
         {
-            for (int i = 1; i < 2; i++)
+            get
             {
-                ListViewItem lvi = new ListViewItem();
-                lvi.Text = "Default Character" + i;
-                lvi.Name = "Default Character" + i;                
-                lvi.ImageIndex = 0;
-                listViewCharacters.Items.Add(lvi);
-
+                return listViewCharacters;
             }
-
         }
 
 
@@ -56,22 +49,24 @@ namespace SkylarValerio_CE04
         // populates listview using the list from Form1
         public void ListView_Populate(object sender, EventArgs e)
         {
-            ListViewItem lvi = new ListViewItem();
-
             if ((sender as Form1).TrainerList.Count > 0)
             {
-                Trainer info = (sender as Form1).TrainerList[0];
+                for (int i = 0; i < (sender as Form1).TrainerList.Count; i++)
+                {
+                    ListViewItem lvi = new ListViewItem();
 
-                lvi.Text = info.Name;
-                lvi.ImageIndex = info.ImageIndex;
-                lvi.Tag = info;
+                    Trainer info = (sender as Form1).TrainerList[i];
 
-                listViewCharacters.Items.Add(lvi);
+                    lvi.Text = info.Name;
+                    lvi.ImageIndex = info.ImageIndex;
+                    lvi.Tag = info;
+
+                    listViewCharacters.Items.Add(lvi);
+
+                }
 
             }
             
-            //Trainer info = (sender as Form1).TrainerList[(sender as Form1).TrainerList.Count-1];
-
         }
 
 
@@ -87,10 +82,16 @@ namespace SkylarValerio_CE04
         // user selects an item in the listview, which opens another form with information
         private void ListViewCharacters_MouseDoubleClick(object sender, MouseEventArgs e)
         {
+            // instantiate new userinput form
             UserInput userInput = new UserInput();
 
+            // subscription for RepopulateInputs delegate in ListViewForm
+            RepopulateInputs += userInput.UserInput_Repopulate;
+
+            // invoke the repopulation event to fill the form
             RepopulateInputs?.Invoke(this, new EventArgs());
 
+            // open the userinput form
             userInput.Show();
         }
     }

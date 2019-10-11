@@ -16,6 +16,7 @@ namespace SkylarValerio_CE04
         // saves the created character from UserInput to the characterList in Form1
         public event EventHandler SaveToList;
 
+
         // getter setter for trainer properties
         public Trainer TrainerInfo
         {
@@ -23,7 +24,8 @@ namespace SkylarValerio_CE04
             {
                 Trainer t = new Trainer();
                 t.Name = txtName.Text;
-                t.Gender = rdMale.Checked;
+                t.MaleGender = rdMale.Checked;
+                t.FemaleGender = rdFemale.Checked;
                 t.TrainerType = comBoxTrainerType.Text;
                 t.Starter = comBoxStarter.Text;
                 t.ImageIndex = comBoxStarter.SelectedIndex;
@@ -32,7 +34,8 @@ namespace SkylarValerio_CE04
             set
             {
                 txtName.Text = value.Name;
-                rdMale.Checked = value.Gender;
+                rdMale.Checked = value.MaleGender;
+                rdFemale.Checked = value.FemaleGender;
                 comBoxTrainerType.Text = value.TrainerType;
                 comBoxStarter.Text = value.Starter;
 
@@ -73,10 +76,15 @@ namespace SkylarValerio_CE04
         // repopulates the inputs based on selected item in listview
         public void UserInput_Repopulate(object sender, EventArgs e)
         {
-            txtName.Text = TrainerInfo.Name;
-            rdMale.Checked = TrainerInfo.Gender;
-            comBoxTrainerType.Text = TrainerInfo.TrainerType;
-            comBoxStarter.Text = TrainerInfo.Starter;
+            ListViewForm lv = sender as ListViewForm;
+
+            Trainer trainer = lv.GetListView.SelectedItems[0].Tag as Trainer;
+
+            txtName.Text = trainer.Name;
+            rdMale.Checked = trainer.MaleGender;
+            rdFemale.Checked = trainer.FemaleGender;
+            comBoxTrainerType.Text = trainer.TrainerType;
+            comBoxStarter.Text = trainer.Starter;
 
         }
 
