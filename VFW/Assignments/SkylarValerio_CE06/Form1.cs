@@ -40,6 +40,7 @@ namespace SkylarValerio_CE06
                 h.Miles = numMiles.Value;
                 h.Hours = numHours.Value;
                 h.Mode = txtMode.Text;
+                h.ImageIndex = comDirection.SelectedIndex;
                 return h;
             }
             set
@@ -83,6 +84,7 @@ namespace SkylarValerio_CE06
             // if the direction is set to "--" then it will not add a new hike
             if(comDirection.Text != "--")
             {
+
                 // adds the new hike object to list
                 hikeList.Add(DataHold);
 
@@ -95,6 +97,9 @@ namespace SkylarValerio_CE06
                 txtHours.Text = totalHours.ToString();
                 txtMiles.Text = totalMiles.ToString();
                 txtLegs.Text = totalHikes.ToString();
+
+                // clear the previous tree
+                treeView.Nodes.Clear();
 
                 // creates tree
                 CreateTree();
@@ -123,39 +128,16 @@ namespace SkylarValerio_CE06
             {
                 foreach (Hikes obj in hikeList)
                 {
-                    Hikes startingObject = hikeList[hikeList.Count - 1];
-
                     // create a tree node
                     TreeNode n = new TreeNode();
-                    n.Text = startingObject.ToString();
+                    n.Text = obj.ToString();
                     n.SelectedImageIndex = 0;
-
-                    if (comDirection.SelectedIndex == 1)
-                    {
-                        // north
-                        n.ImageIndex = 1;
-                    }
-                    else if (comDirection.SelectedIndex == 2)
-                    {
-                        // east
-                        n.ImageIndex = 2;
-                    }
-                    else if (comDirection.SelectedIndex == 3)
-                    {
-                        // south
-                        n.ImageIndex = 3;
-                    }
-                    else if (comDirection.SelectedIndex == 4)
-                    {
-                        // west
-                        n.ImageIndex = 4;
-
-                    }
+                    n.ImageIndex = obj.ImageIndex;
 
                     // add the nodes to display
-                    n.Nodes.Add("miles", "Miles " + startingObject.Miles);                   
-                    n.Nodes.Add("hours", "Hours " + startingObject.Hours);
-                    n.Nodes.Add("mode", "Mode " + startingObject.Mode);
+                    n.Nodes.Add("miles", "Miles " + obj.Miles, 6);                   
+                    n.Nodes.Add("hours", "Hours " + obj.Hours, 5);
+                    n.Nodes.Add("mode", "Mode " + obj.Mode, 7);
 
                     treeView.Nodes.Add(n);
 

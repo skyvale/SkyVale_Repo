@@ -18,13 +18,14 @@ namespace SkylarValerio_CE06
         string direction;
         decimal miles;
         decimal hours;
-        string mode;       
+        string mode;
+        int imageIndex;
 
         public string Direction { get => direction; set => direction = value; }
         public decimal Miles { get => miles; set => miles = value; }
         public decimal Hours { get => hours; set => hours = value; }
         public string Mode { get => mode; set => mode = value; }
-
+        public int ImageIndex { get => imageIndex; set => imageIndex = value; }
 
         public override string ToString()
         {
