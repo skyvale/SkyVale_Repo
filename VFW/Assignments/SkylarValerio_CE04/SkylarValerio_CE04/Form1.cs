@@ -8,6 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*
+ * Skylar Valerio
+ * 10.09.19
+ * CE04: ListViews
+ * VFW
+ * 
+ */ 
+
 namespace SkylarValerio_CE04
 {
     public partial class Form1 : Form
@@ -15,6 +23,10 @@ namespace SkylarValerio_CE04
         // delegate
         // populates the ListViewForm with the list from Form1
         public event EventHandler PopulateListView;
+
+        // ints to hold the value of the Form1 textboxes
+        int windows = 0;
+        int characters = 0;
 
         public List<Trainer> trainerList = new List<Trainer>();
 
@@ -31,6 +43,9 @@ namespace SkylarValerio_CE04
         public Form1()
         {
             InitializeComponent();
+            txtWindowsOpen.Text = windows.ToString();
+            txtObjectsCreated.Text = characters.ToString();
+
         }
 
 

@@ -4,6 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
+ * Skylar Valerio
+ * 10.09.19
+ * CE04: ListViews
+ * VFW
+ * 
+ */
+
 namespace SkylarValerio_CE04
 {
     public class Trainer
