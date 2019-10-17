@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Newtonsoft.Json.Linq;
 using System.Net;
 using System.IO;
+using Newtonsoft.Json.Linq;
 
 /*
  * Skylar Valerio
@@ -37,8 +37,11 @@ namespace SkylarValerio_CE07
         string startAPI = "https://marketdata.websol.barchart.com/getQuote.json?apikey=813124bf9d173b9b0337bc55cf5a2f48&symbols=";
         string apiEndPoint;
 
-        // list to hold stock objects
+        // list to hold selected stock objects
         List<Stocks> stockList = new List<Stocks>();
+
+        // dictionary to hold stock symbols
+        Dictionary<string, string> stockSymbols = new Dictionary<string, string>();
 
         // dictionary to hold stock objects (with unique identifiers)
         Dictionary<string, Stocks> stockDict = new Dictionary<string, Stocks>();
@@ -48,6 +51,7 @@ namespace SkylarValerio_CE07
         public Form1()
         {
             InitializeComponent();
+            CreateDictionary();
 
         }
 
@@ -59,51 +63,35 @@ namespace SkylarValerio_CE07
         }
 
 
+        private void CreateDictionary()
+        {
+            // add the symbols to dictionary
+            stockSymbols.Add("FB", "Facebook");
+            stockSymbols.Add("AMZN", "Amazon");
+            stockSymbols.Add("AAPL", "Apple");
+            stockSymbols.Add("NFLX", "Netflix");
+            stockSymbols.Add("GOOG", "Google");
+        }
+
         // this will concatenate the url to grab the stock data using the api
         private void BuildAPI()
         {
-            string symbol;
+            Dictionary<string, string> tempDict = new Dictionary<string, string>();
 
-            switch (listBoxStocks.SelectedItem)
+            for (int i = 0; i < listBoxStocks.SelectedItems.Count; i++)
             {
-                case "Facebook":
-                    {
-                        symbol = "FB";
-                        apiEndPoint = startAPI + symbol;
-                    }
-                    break;
-                case "Amazon":
-                    {
-                        symbol = "AMZN";
-                        apiEndPoint = startAPI + symbol;
-                    }
-                    break;
-                case "Apple":
-                    {
-                        symbol = "AAPL";
-                        apiEndPoint = startAPI + symbol;
-                    }
-                    break;
-                case "Netflix":
-                    {
-                        symbol = "NFLX";
-                        apiEndPoint = startAPI + symbol;
-                    }
-                    break;
-                case "Google":
-                    {
-                        symbol = "GOOG";
-                        apiEndPoint = startAPI + symbol;
-                    }
-                    break;
-                default:
-                    {
-                        //MessageBox.Show("Error: BuildAPI function messed");
-                    }
-                    break;
+                if (listBoxStocks.SelectedIndex == 0)
+                {
+
+                }
+                if (listBoxStocks.SelectedIndex == 1)
+                {
+                    
+                }
+
 
             }
-
+            
         }
 
 
@@ -124,7 +112,8 @@ namespace SkylarValerio_CE07
             stock.HighPrice = decimal.Parse(jsonData["results"][0]["high"].ToString());
             stock.LowPrice = decimal.Parse(jsonData["results"][0]["low"].ToString());
 
-            // adds stock to dictionary, identified by the stock symbol
+            // adds stock to stocks dictionary, identified by the stock symbol
+            // this is kind of unnecessary
             switch (jsonData["results"][0]["symbol"].ToString())
             {
                 case "FB":
@@ -170,7 +159,6 @@ namespace SkylarValerio_CE07
             txtDebug.Clear();
             txtDebug.Text = apiEndPoint;
 
-            BuildAPI();
 
         }
 
@@ -221,6 +209,9 @@ namespace SkylarValerio_CE07
             // clears previous list
             stockList.Clear();
 
+            // concatenates the api url strings
+            BuildAPI();
+
             // adds selection to dictionary
             StoreData();
 
@@ -232,24 +223,23 @@ namespace SkylarValerio_CE07
 
 
                 // add selected items in the listbox to the list
-                foreach (string s in listBoxStocks.SelectedItems)
+                for (int i = 0; i < listBoxStocks.SelectedItems.Count; i++)
                 {
-
                     JObject jsonData = JObject.Parse(apiData);
                     Stocks stock = new Stocks();
 
                     // add revelant json data to stock object
                     // parse to appropriate datatype
-                    stock.Name = jsonData["results"][0]["name"].ToString();
-                    stock.LastPrice = decimal.Parse(jsonData["results"][0]["lastPrice"].ToString());
-                    stock.OpeningPrice = decimal.Parse(jsonData["results"][0]["open"].ToString());
-                    stock.HighPrice = decimal.Parse(jsonData["results"][0]["high"].ToString());
-                    stock.LowPrice = decimal.Parse(jsonData["results"][0]["low"].ToString());
+                    stock.Name = jsonData["results"][i]["name"].ToString();
+                    stock.LastPrice = decimal.Parse(jsonData["results"][i]["lastPrice"].ToString());
+                    stock.OpeningPrice = decimal.Parse(jsonData["results"][i]["open"].ToString());
+                    stock.HighPrice = decimal.Parse(jsonData["results"][i]["high"].ToString());
+                    stock.LowPrice = decimal.Parse(jsonData["results"][i]["low"].ToString());
 
                     // adds stock to list
                     stockList.Add(stock);
-
                 }
+
 
                 // clears the selection
                 listBoxStocks.ClearSelected();
