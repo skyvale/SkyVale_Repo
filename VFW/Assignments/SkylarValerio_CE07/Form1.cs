@@ -66,30 +66,39 @@ namespace SkylarValerio_CE07
         private void CreateDictionary()
         {
             // add the symbols to dictionary
-            stockSymbols.Add("FB", "Facebook");
-            stockSymbols.Add("AMZN", "Amazon");
-            stockSymbols.Add("AAPL", "Apple");
-            stockSymbols.Add("NFLX", "Netflix");
-            stockSymbols.Add("GOOG", "Google");
+            stockSymbols.Add("Facebook", "FB");
+            stockSymbols.Add("Amazon", "AMZN");
+            stockSymbols.Add("Apple", "AAPL");
+            stockSymbols.Add("Netflix", "NFLX");
+            stockSymbols.Add("Google", "GOOG");
         }
 
         // this will concatenate the url to grab the stock data using the api
         private void BuildAPI()
         {
-            Dictionary<string, string> tempDict = new Dictionary<string, string>();
 
-            for (int i = 0; i < listBoxStocks.SelectedItems.Count; i++)
+            foreach (string s in listBoxStocks.SelectedItems)
             {
-                if (listBoxStocks.SelectedIndex == 0)
+                Stocks stock = new Stocks();
+                stock.Symbol = stockSymbols[stock.ToString()];
+
+                // this will concatenate the url depending on how many
+                // items the user has chosen
+                if (listBoxStocks.SelectedItems.Count > 1)
                 {
+                    apiEndPoint = startAPI + stock.Symbol + ",";
+                    MessageBox.Show(apiEndPoint);
+                }
+                else if (listBoxStocks.SelectedItems.Count == 1)
+                {
+                    apiEndPoint = startAPI + stock.Symbol;
+                }
+                else if (listBoxStocks.SelectedItems.Count == listBoxStocks.SelectedItems.Count - 1)
+                {
+                    apiEndPoint = startAPI + stock.Symbol;
+                    MessageBox.Show(apiEndPoint);
 
                 }
-                if (listBoxStocks.SelectedIndex == 1)
-                {
-                    
-                }
-
-
             }
             
         }
@@ -98,56 +107,65 @@ namespace SkylarValerio_CE07
         // this will store the stock objects into the dictionary
         private void StoreData()
         {
-            // retrieve the data
-            string apiData = apiConnection.DownloadString(apiEndPoint);
-
-            JObject jsonData = JObject.Parse(apiData);
-            Stocks stock = new Stocks();
-
-            // add revelant json data to stock object
-            // parse to appropriate datatype
-            stock.Name = jsonData["results"][0]["name"].ToString();
-            stock.LastPrice = decimal.Parse(jsonData["results"][0]["lastPrice"].ToString());
-            stock.OpeningPrice = decimal.Parse(jsonData["results"][0]["open"].ToString());
-            stock.HighPrice = decimal.Parse(jsonData["results"][0]["high"].ToString());
-            stock.LowPrice = decimal.Parse(jsonData["results"][0]["low"].ToString());
-
-            // adds stock to stocks dictionary, identified by the stock symbol
-            // this is kind of unnecessary
-            switch (jsonData["results"][0]["symbol"].ToString())
+            try
             {
-                case "FB":
-                    {
-                        stockDict.Add("FB", stock);
-                    }
-                    break;
-                case "AMZN":
-                    {
-                        stockDict.Add("AMZN", stock);
-                    }
-                    break;
-                case "AAPL":
-                    {
-                        stockDict.Add("AAPL", stock);
-                    }
-                    break;
-                case "NFLX":
-                    {
-                        stockDict.Add("NFLX", stock);
-                    }
-                    break;
-                case "GOOG":
-                    {
-                        stockDict.Add("GOOG", stock);
-                    }
-                    break;
+                // retrieve the data
+                string apiData = apiConnection.DownloadString(apiEndPoint);
 
-                default:
-                    {
-                        MessageBox.Show("Error: dictionary is broken");
-                    }
-                    break;
+                JObject jsonData = JObject.Parse(apiData);
+                Stocks stock = new Stocks();
+
+                // add revelant json data to stock object
+                // parse to appropriate datatype
+                stock.Name = jsonData["results"][0]["name"].ToString();
+                stock.LastPrice = decimal.Parse(jsonData["results"][0]["lastPrice"].ToString());
+                stock.OpeningPrice = decimal.Parse(jsonData["results"][0]["open"].ToString());
+                stock.HighPrice = decimal.Parse(jsonData["results"][0]["high"].ToString());
+                stock.LowPrice = decimal.Parse(jsonData["results"][0]["low"].ToString());
+
+                // adds stock to stocks dictionary, identified by the stock symbol
+                // this is kind of unnecessary
+                switch (jsonData["results"][0]["symbol"].ToString())
+                {
+                    case "FB":
+                        {
+                            stockDict.Add("FB", stock);
+                        }
+                        break;
+                    case "AMZN":
+                        {
+                            stockDict.Add("AMZN", stock);
+                        }
+                        break;
+                    case "AAPL":
+                        {
+                            stockDict.Add("AAPL", stock);
+                        }
+                        break;
+                    case "NFLX":
+                        {
+                            stockDict.Add("NFLX", stock);
+                        }
+                        break;
+                    case "GOOG":
+                        {
+                            stockDict.Add("GOOG", stock);
+                        }
+                        break;
+
+                    default:
+                        {
+                            MessageBox.Show("Error: dictionary is broken");
+                        }
+                        break;
+                }
+
             }
+            catch(Exception exc)
+            {
+                MessageBox.Show("Error: StoreData");
+            }
+           
 
         }
 
@@ -212,34 +230,36 @@ namespace SkylarValerio_CE07
             // concatenates the api url strings
             BuildAPI();
 
-            // adds selection to dictionary
-            StoreData();
-
             // adds whatever is selected to the list
             if (listBoxStocks.SelectedIndex >= 0)
             {
-                // retrieve the data
-                string apiData = apiConnection.DownloadString(apiEndPoint);
-
-
-                // add selected items in the listbox to the list
-                for (int i = 0; i < listBoxStocks.SelectedItems.Count; i++)
+                try
                 {
-                    JObject jsonData = JObject.Parse(apiData);
-                    Stocks stock = new Stocks();
+                    // retrieve the data
+                    string apiData = apiConnection.DownloadString(apiEndPoint);
 
-                    // add revelant json data to stock object
-                    // parse to appropriate datatype
-                    stock.Name = jsonData["results"][i]["name"].ToString();
-                    stock.LastPrice = decimal.Parse(jsonData["results"][i]["lastPrice"].ToString());
-                    stock.OpeningPrice = decimal.Parse(jsonData["results"][i]["open"].ToString());
-                    stock.HighPrice = decimal.Parse(jsonData["results"][i]["high"].ToString());
-                    stock.LowPrice = decimal.Parse(jsonData["results"][i]["low"].ToString());
+                    // add selected items in the listbox to the list
+                    for (int i = 0; i < listBoxStocks.SelectedItems.Count; i++)
+                    {
+                        JObject jsonData = JObject.Parse(apiData);
+                        Stocks stock = new Stocks();
 
-                    // adds stock to list
-                    stockList.Add(stock);
+                        // add revelant json data to stock object
+                        // parse to appropriate datatype
+                        stock.Name = jsonData["results"][i]["name"].ToString();
+                        stock.LastPrice = decimal.Parse(jsonData["results"][i]["lastPrice"].ToString());
+                        stock.OpeningPrice = decimal.Parse(jsonData["results"][i]["open"].ToString());
+                        stock.HighPrice = decimal.Parse(jsonData["results"][i]["high"].ToString());
+                        stock.LowPrice = decimal.Parse(jsonData["results"][i]["low"].ToString());
+
+                        // adds stock to list
+                        stockList.Add(stock);
+                    }
                 }
-
+                catch (Exception exc)
+                {
+                    MessageBox.Show("Error: BtnSaveList");
+                }
 
                 // clears the selection
                 listBoxStocks.ClearSelected();
@@ -250,6 +270,10 @@ namespace SkylarValerio_CE07
                 numOpeningPrice.Value = stockList[0].OpeningPrice;
                 numLowPrice.Value = stockList[0].LowPrice;
                 numHighPrice.Value = stockList[0].HighPrice;
+
+                // adds selection to dictionary
+                StoreData();
+
 
             }
             else
