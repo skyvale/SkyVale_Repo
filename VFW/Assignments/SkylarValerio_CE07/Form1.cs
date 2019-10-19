@@ -21,7 +21,6 @@ using Newtonsoft.Json.Linq;
 
 // TODO
 /*
- * > btnSaveList saves original selected item multiple times
  * > NEXT button functionality
  * > BACK button functionality
  * 
@@ -36,6 +35,8 @@ namespace SkylarValerio_CE07
         WebClient apiConnection = new WebClient();
         string startAPI = "https://marketdata.websol.barchart.com/getQuote.json?apikey=813124bf9d173b9b0337bc55cf5a2f48&symbols=";
         string apiEndPoint;
+
+        int button = 0;
 
         // list to hold selected stock objects
         List<Stocks> stockList = new List<Stocks>();
@@ -52,6 +53,9 @@ namespace SkylarValerio_CE07
         {
             InitializeComponent();
             CreateDictionary();
+
+            btnNext.Enabled = false;
+            btnBack.Enabled = false;
 
         }
 
@@ -73,32 +77,56 @@ namespace SkylarValerio_CE07
             stockSymbols.Add("Google", "GOOG");
         }
 
+
         // this will concatenate the url to grab the stock data using the api
         private void BuildAPI()
         {
+            apiEndPoint = startAPI;
 
-            foreach (string s in listBoxStocks.SelectedItems)
+            for (int i = 0; i < listBoxStocks.SelectedItems.Count; i++)
             {
                 Stocks stock = new Stocks();
-                stock.Symbol = stockSymbols[stock.ToString()];
+
+                if (listBoxStocks.SelectedItems[i].ToString() == "Facebook")
+                {
+                    stock.symbol = "FB";
+                }
+                else if (listBoxStocks.SelectedItems[i].ToString() == "Amazon")
+                {
+                    stock.symbol = "AMZN";
+                }
+                else if (listBoxStocks.SelectedItems[i].ToString() == "Apple")
+                {
+                    stock.symbol = "AAPL";
+                }
+                else if (listBoxStocks.SelectedItems[i].ToString() == "Netflix")
+                {
+                    stock.symbol = "NFLX";
+                }
+                else if (listBoxStocks.SelectedItems[i].ToString() == "Google")
+                {
+                    stock.symbol = "GOOG";
+                }
+                else
+                {
+                    MessageBox.Show("Error: BuildAPI - adding stock symbol");
+                }
+
 
                 // this will concatenate the url depending on how many
                 // items the user has chosen
-                if (listBoxStocks.SelectedItems.Count > 1)
+                if (i >= 0 && i != listBoxStocks.SelectedItems.Count - 1)
                 {
-                    apiEndPoint = startAPI + stock.Symbol + ",";
-                    MessageBox.Show(apiEndPoint);
+                    apiEndPoint += stock.symbol + ",";
+                    //MessageBox.Show("Count greater than 1\n\n" + apiEndPoint);
                 }
-                else if (listBoxStocks.SelectedItems.Count == 1)
+                else if (i == listBoxStocks.SelectedItems.Count - 1)
                 {
-                    apiEndPoint = startAPI + stock.Symbol;
-                }
-                else if (listBoxStocks.SelectedItems.Count == listBoxStocks.SelectedItems.Count - 1)
-                {
-                    apiEndPoint = startAPI + stock.Symbol;
-                    MessageBox.Show(apiEndPoint);
+                    apiEndPoint += stock.symbol;
+                    //MessageBox.Show("Reached end of Count\n\n" + apiEndPoint);
 
                 }
+
             }
             
         }
@@ -124,7 +152,6 @@ namespace SkylarValerio_CE07
                 stock.LowPrice = decimal.Parse(jsonData["results"][0]["low"].ToString());
 
                 // adds stock to stocks dictionary, identified by the stock symbol
-                // this is kind of unnecessary
                 switch (jsonData["results"][0]["symbol"].ToString())
                 {
                     case "FB":
@@ -161,7 +188,7 @@ namespace SkylarValerio_CE07
                 }
 
             }
-            catch(Exception exc)
+            catch(Exception e)
             {
                 MessageBox.Show("Error: StoreData");
             }
@@ -221,6 +248,7 @@ namespace SkylarValerio_CE07
         // it will then automatically display the first value
         private void BtnSaveList_Click(object sender, EventArgs e)
         {
+
             // clears previous dictionary
             stockDict.Clear();
 
@@ -258,11 +286,19 @@ namespace SkylarValerio_CE07
                 }
                 catch (Exception exc)
                 {
-                    MessageBox.Show("Error: BtnSaveList");
+                    MessageBox.Show("Error: " + exc.ToString());
                 }
 
                 // clears the selection
                 listBoxStocks.ClearSelected();
+
+                MessageBox.Show(stockList.Count.ToString());
+
+                // enables the Next button if the list has more than one item
+                if (stockList.Count > 1)
+                {
+                    btnNext.Enabled = true;
+                }
 
                 // displays the first value of the list
                 txtName.Text = stockList[0].Name;
@@ -287,21 +323,46 @@ namespace SkylarValerio_CE07
         // displays the next object in the list
         // will not do anything if there is no more objects
         private void BtnNext_Click(object sender, EventArgs e)
+        {          
+            if (stockList.Count > 1)
+            {
+                button++;
+
+                if (button == stockList.Count - 1)
+                {
+                    btnNext.Enabled = false;
+                }
+
+                txtName.Text = stockList[button].Name;
+                numLastPrice.Value = stockList[button].LastPrice;
+                numOpeningPrice.Value = stockList[button].OpeningPrice;
+                numLowPrice.Value = stockList[button].LowPrice;
+                numHighPrice.Value = stockList[button].HighPrice;
+
+                btnBack.Enabled = true;
+
+            }
+        }
+
+
+
+        private void btnBack_Click(object sender, EventArgs e)
         {
+            button--;
 
-            MessageBox.Show(stockList[0].ToString()+ " and " + stockList[1].ToString());
-            //if (stockList.Count > 0)
-            //{
-            //    for (int i = 0; i < stockList.Count; i++)
-            //    {
-            //        txtName.Text = stockList[i + 1].Name;
-            //        numLastPrice.Value = stockList[i + 1].LastPrice;
-            //        numOpeningPrice.Value = stockList[i + 1].OpeningPrice;
-            //        numLowPrice.Value = stockList[i + 1].LowPrice;
-            //        numHighPrice.Value = stockList[i + 1].HighPrice;
-            //    }
+            if (button == 0)
+            {
+                btnBack.Enabled = false;
+            }
 
-            //}
+            txtName.Text = stockList[button].Name;
+            numLastPrice.Value = stockList[button].LastPrice;
+            numOpeningPrice.Value = stockList[button].OpeningPrice;
+            numLowPrice.Value = stockList[button].LowPrice;
+            numHighPrice.Value = stockList[button].HighPrice;
+
+            btnNext.Enabled = true;
+
         }
     }
 }
