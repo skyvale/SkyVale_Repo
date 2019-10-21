@@ -19,12 +19,6 @@ using Newtonsoft.Json.Linq;
  * 
  */
 
-// TODO
-/*
- * > NEXT button functionality
- * > BACK button functionality
- * 
- */
 
 namespace SkylarValerio_CE07
 {
@@ -128,7 +122,7 @@ namespace SkylarValerio_CE07
                 }
 
             }
-            
+
         }
 
 
@@ -188,11 +182,11 @@ namespace SkylarValerio_CE07
                 }
 
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 MessageBox.Show("Error: StoreData");
             }
-           
+
 
         }
 
@@ -211,6 +205,33 @@ namespace SkylarValerio_CE07
         // this will save items from the list to a txt file (File IO)
         private void BtnSave_Click(object sender, EventArgs e)
         {
+            // create a new save file, default name stocks.txt, filter as txt file
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.FileName = "stocks.txt";
+            sfd.Filter = "txt file | *.txt";
+
+            if (sfd.ShowDialog() == DialogResult.OK)
+            {
+                // open the streamwriter
+                Stream stream = sfd.OpenFile();
+                StreamWriter sw = new StreamWriter(stream);
+
+                // write the info to a file
+                foreach (Stocks s in stockList)
+                {
+                    sw.WriteLine(s.Name);
+                    sw.WriteLine(s.LastPrice.ToString());
+                    sw.WriteLine(s.OpeningPrice.ToString());
+                    sw.WriteLine(s.HighPrice.ToString());
+                    sw.WriteLine(s.LowPrice.ToString());
+                    // identifier to separate the objects
+                    sw.WriteLine("===");
+                }
+
+                // close the streamwriter
+                sw.Close();
+                stream.Close();
+            }
 
         }
 
@@ -218,8 +239,61 @@ namespace SkylarValerio_CE07
         // this will load a txt file to populate the form inputs
         private void BtnLoad_Click(object sender, EventArgs e)
         {
+            stockList.Clear();
 
+            using (OpenFileDialog ofd = new OpenFileDialog())
+            {
+                ofd.FileName = "stocks.txt";
+                ofd.Filter = "txt file | *.txt";
+                ofd.RestoreDirectory = true;
+
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    // get the file path
+                    var filePath = ofd.FileName;
+
+                    // use streamreader to read the contents of the file
+                    var fileStream = ofd.OpenFile();
+
+                    using (StreamReader reader = new StreamReader(fileStream))
+                    {
+                        Stocks readStock = new Stocks();
+                        string readString = "";
+                        List<string> readList = new List<string>();
+
+                        while ((readString = reader.ReadLine()) != null)
+                        {
+                            readList.Add(readString);
+
+                        }
+
+
+                        if (reader.ReadLine() == "===")
+                        {
+                            reader.ReadLine();
+                        }
+                        else
+                        {
+                            txtName.Text = readList[0];
+                            numLastPrice.Value = decimal.Parse(readList[1]);
+                            numOpeningPrice.Value = decimal.Parse(readList[2]);
+                            numHighPrice.Value = decimal.Parse(readList[3]);
+                            numLowPrice.Value = decimal.Parse(readList[4]);
+
+                            readStock.Name = readList[0];
+                            readStock.LastPrice = decimal.Parse(readList[1]);
+                            readStock.OpeningPrice = decimal.Parse(readList[2]);
+                            readStock.HighPrice = decimal.Parse(readList[3]);
+                            readStock.LowPrice = decimal.Parse(readList[4]);
+
+                            stockList.Add(readStock);
+                        }
+
+                    }
+                }
+            }
         }
+
 
 
         // this will clear out the form inputs as well as the stockList
@@ -323,7 +397,7 @@ namespace SkylarValerio_CE07
         // displays the next object in the list
         // will not do anything if there is no more objects
         private void BtnNext_Click(object sender, EventArgs e)
-        {          
+        {
             if (stockList.Count > 1)
             {
                 button++;
