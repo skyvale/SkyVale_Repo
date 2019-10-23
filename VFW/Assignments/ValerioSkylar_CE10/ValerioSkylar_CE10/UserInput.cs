@@ -67,7 +67,7 @@ namespace ValerioSkylar_CE10
         {
             Form1 form = sender as Form1;
 
-             lbSelectedDate.Text = form.currentDate;
+            lbSelectedDate.Text = form.currentDate;
 
         }
 
@@ -80,8 +80,7 @@ namespace ValerioSkylar_CE10
             for (int i = 0; i < form.EventList.Count; i++)
             {
                 if (form.currentDate == form.EventList[i].SelectedDate)
-                {
-
+                { 
                     DataHold = form.EventList[i];
 
                 }

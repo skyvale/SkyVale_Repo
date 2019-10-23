@@ -18,10 +18,8 @@ using System.Windows.Forms;
 
 // !! TODO
 /*
- * prevent the user from opening a userInput form if there is no event on the day they select
- * 
- * make events updatable
- * 
+ * see what showdialog is triggering the multiple forms upon trying to repopulate form
+ * make sure the events can update properly
  * 
  */
 
@@ -169,8 +167,16 @@ namespace ValerioSkylar_CE10
             // invoke
             RepopulateInputs?.Invoke(this, new EventArgs());
 
-            // show new instance of userinput
-            userInput.ShowDialog();
+            for (int i = 0; i < eventList.Count; i++)
+            {
+                if (currentDate == eventList[i].SelectedDate)
+                {
+                    // show new instance of userinput
+                    userInput.ShowDialog();
+                }
+
+            }
+
 
 
         }
