@@ -64,7 +64,7 @@
             // 
             this.btnExit.Name = "btnExit";
             this.btnExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
-            this.btnExit.Size = new System.Drawing.Size(324, 38);
+            this.btnExit.Size = new System.Drawing.Size(237, 38);
             this.btnExit.Text = "Exit";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -73,7 +73,7 @@
             this.pictureBox.Location = new System.Drawing.Point(485, 56);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(339, 258);
-            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox.TabIndex = 2;
             this.pictureBox.TabStop = false;
             // 
@@ -82,6 +82,8 @@
             this.monthCalendar.Location = new System.Drawing.Point(45, 89);
             this.monthCalendar.Name = "monthCalendar";
             this.monthCalendar.TabIndex = 0;
+            this.monthCalendar.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar_DateChanged);
+            this.monthCalendar.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar_DateSelected);
             // 
             // btnAddEvent
             // 

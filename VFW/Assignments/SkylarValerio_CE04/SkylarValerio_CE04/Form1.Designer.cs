@@ -52,7 +52,7 @@
             this.listToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(484, 40);
+            this.menuStrip1.Size = new System.Drawing.Size(484, 42);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -61,7 +61,7 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(64, 36);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(64, 38);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // exitToolStripMenuItem
@@ -77,20 +77,20 @@
             this.btnDisplay,
             this.btnClearForm1});
             this.listToolStripMenuItem.Name = "listToolStripMenuItem";
-            this.listToolStripMenuItem.Size = new System.Drawing.Size(62, 36);
+            this.listToolStripMenuItem.Size = new System.Drawing.Size(62, 38);
             this.listToolStripMenuItem.Text = "List";
             // 
             // btnDisplay
             // 
             this.btnDisplay.Name = "btnDisplay";
-            this.btnDisplay.Size = new System.Drawing.Size(191, 38);
+            this.btnDisplay.Size = new System.Drawing.Size(324, 38);
             this.btnDisplay.Text = "Display";
             this.btnDisplay.Click += new System.EventHandler(this.btnDisplay_Click);
             // 
             // btnClearForm1
             // 
             this.btnClearForm1.Name = "btnClearForm1";
-            this.btnClearForm1.Size = new System.Drawing.Size(191, 38);
+            this.btnClearForm1.Size = new System.Drawing.Size(324, 38);
             this.btnClearForm1.Text = "Clear";
             // 
             // groupBox1
@@ -101,9 +101,9 @@
             this.groupBox1.Controls.Add(this.txtWindowsOpen);
             this.groupBox1.Controls.Add(this.lbWindowsOpen);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(0, 40);
+            this.groupBox1.Location = new System.Drawing.Point(0, 42);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(484, 322);
+            this.groupBox1.Size = new System.Drawing.Size(484, 320);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 

@@ -85,7 +85,22 @@
             // 
             // comEventTime
             // 
+            this.comEventTime.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comEventTime.FormattingEnabled = true;
+            this.comEventTime.Items.AddRange(new object[] {
+            "6:00 am",
+            "7:00 am",
+            "8:00 am",
+            "9:00 am",
+            "10:00 am",
+            "11:00 am",
+            "12:00 pm",
+            "1:00 pm",
+            "2:00 pm",
+            "3:00 pm",
+            "4:00 pm",
+            "5:00 pm",
+            "6:00 pm"});
             this.comEventTime.Location = new System.Drawing.Point(220, 232);
             this.comEventTime.Name = "comEventTime";
             this.comEventTime.Size = new System.Drawing.Size(183, 33);
@@ -102,7 +117,16 @@
             // 
             // comEventDuration
             // 
+            this.comEventDuration.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comEventDuration.FormattingEnabled = true;
+            this.comEventDuration.Items.AddRange(new object[] {
+            "30 min",
+            "1 hour",
+            "1 hour 30 min",
+            "2 hours",
+            "2 hours 30 min",
+            "3 hours",
+            "ALL DAY"});
             this.comEventDuration.Location = new System.Drawing.Point(220, 326);
             this.comEventDuration.Name = "comEventDuration";
             this.comEventDuration.Size = new System.Drawing.Size(183, 33);
@@ -126,6 +150,7 @@
             this.btnSaveEvent.TabIndex = 9;
             this.btnSaveEvent.Text = "Save Event";
             this.btnSaveEvent.UseVisualStyleBackColor = true;
+            this.btnSaveEvent.Click += new System.EventHandler(this.btnSaveEvent_Click);
             // 
             // UserInput
             // 
