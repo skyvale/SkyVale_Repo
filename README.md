@@ -8,19 +8,12 @@ Everything in this repo is for school. I have a separate repo for my own persona
 
 ### Current Class(es)
 ```
-VFW
+Portfolio III
 ```
 
-__Currently working on: *CE04 + CE05*__
+__Currently working on: *Week I Intergratives + Week I Project Thesis*__
 
-CE04
-- [ ] finish debugging CE04
+Trello Board:
+https://trello.com/b/d5MadWnl/vfw
 
-CE05
-- [ ] research 'radio buttons'
-- [ ] build the frame of the forms 
-- [ ] sketch a flow chart of the code
-- [ ] finish the ListView/Main form
-- [ ] finish the User Input Dialog
-- [ ] finish the Events
 
