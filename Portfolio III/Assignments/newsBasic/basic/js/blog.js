@@ -9,7 +9,7 @@ xhr.onload = function(){
 
     // insert the HTML articles
 
-   let htmlTemplate;
+   let htmlTemplate = "";
    for (let i = 0; i < data.starters.length; i++){    
     starterMon = `
        <article>
@@ -36,6 +36,7 @@ xhr.onload = function(){
        htmlTemplate += starterMon;
    }
    
+   // let blogSection = document.querySelector("#blog");
    document.getElementById("blog").innerHTML = "<h2>Pokemon Starters</h2>"+htmlTemplate+"<p><a href='https://www.serebii.net/pokemon/all.shtml'><button>Other Generations</button></a></p>";
    
 }
@@ -43,5 +44,6 @@ xhr.onload = function(){
 // call + close Ajax
 xhr.open('GET', 'https://skyvale.github.io/pokemondata.json', true);
 xhr.send(null);
+
 
 
