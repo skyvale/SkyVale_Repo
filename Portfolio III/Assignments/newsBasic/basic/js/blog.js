@@ -9,7 +9,6 @@ xhr.onload = function(){
    // first check to make sure the blog exists
    let blogSection = document.querySelector("#blog");
    if (blogSection){
-
     // edit the heading
     let blogHeading = blogSection.querySelector("h2");
     if (blogHeading) {
@@ -17,6 +16,8 @@ xhr.onload = function(){
         blogHeading.innerHTML = heading;
     }
     
+    // console.log(data.starters[1].image);
+
     // edit the seperate articles by looping through the JSON file
     let htmlTemplate = "";
     for (let i = 0; i < data.starters.length; i++){    
@@ -44,14 +45,13 @@ xhr.onload = function(){
     
     }
 
-    // insertAdjacent is to ADD content whereas 
-    // innerHTML is to REPLACE content within the HTML file
-    blogHeading.insertAdjacentHTML('afterend', htmlTemplate);
+        // insertAdjacent is to ADD content whereas 
+        // innerHTML is to REPLACE content within the HTML file
+        blogHeading.insertAdjacentHTML('afterend', htmlTemplate);
 
 
-    let otherGenButton = blogSection.querySelector('#blog > p');
-    console.log(otherGenButton);
-    if (otherGenButton){
+        let otherGenButton = blogSection.querySelector('#blog > p');
+        if (otherGenButton){
         let buttonText = "<a href='https://www.serebii.net/pokemon/all.shtml'>Other Generations</button></a>";
         otherGenButton.innerHTML = buttonText;
         

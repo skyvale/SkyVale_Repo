@@ -13,18 +13,18 @@ xhr.onload = function(){
    // first select the gallery section and
    // check to make sure the gallery section exists
    let gallerySection = document.querySelector('#gallery');
+
    if (gallerySection){
 
-        // VARIABLES THAT YOU MIGHT NEED
-        let pageSection = gallerySection.querySelector('#pagination');
-        let activeArticle;
-        let articles = document.querySelectorAll('article');
+        // get the buttons in the html
+        // let pageSection = gallerySection.querySelector('.pagination');
+        // let nextButton = pageSection.getElementsByTagName('li:first-of-type');
+        // let prevButton = pageSection.getElementsByTagName('li:last-of-type');
 
-        // THESE BOIS DONT WORK
-        // let nextButton = pageSection.querySelector('li:first-of-type');
-        // let prevButton = pageSection.querySelector('li:last-of-type');
+        let navButtons = document.querySelectorAll('.pagination li');
+        let prevButton = navButtons[0];
+        let nextButton = navButtons[1];
 
-        
         // change the header
         let galleryHeading = gallerySection.querySelector('h2');
         if (galleryHeading){
@@ -35,9 +35,13 @@ xhr.onload = function(){
         // target the article within the gallery
         let galleryArticle = gallerySection.querySelector('article');
 
+        // create an array to hold the htmlTemplates
+        let templateArray = []
+
         // create a loop to add the images + captions from the json file
         // (maybe you need an image array here?)
         function htmlTemplate(){
+
             let htmlTemplate = "";
             for (i = 0; i < data.big_images.length; i++){
                 htmlTemplate = `
@@ -51,43 +55,43 @@ xhr.onload = function(){
                     </article>
     
                 `
+                templateArray.push(htmlTemplate);
             }
+            
+            galleryHeading.insertAdjacentHTML('afterend',templateArray[0])
         }
-
-        console.log(htmlTemplate);
-        // inserts the updated html into the html file
-        galleryArticle.innerHTML = htmlTemplate;
-
-        //galleryHeading.insertAdjacentHTML('afterend',htmlTemplate);
    
+        // puts the images into place
+        htmlTemplate();
+
+        // set the current image
+        let currentImage = 0;
+
         // when the user clicks the next button, it will go to the next image
-        nextButton.addEventListener("click",changeImageNext);
+        nextButton.addEventListener("click", function changeImageNext(){
+
+            if (currentImage < 5 && currentImage > -1){
+                // inserts the updated html into the html file
+                gallerySection.querySelector('article').innerHTML = templateArray[currentImage];
+            }
+
+            currentImage++;
+        });
 
         // when the user clicks the back button, it will go back an image
-        prevButton.addEventListener("click",changeImagePrev);
+        prevButton.addEventListener("click", function changeImagePrev(){
 
-        // add a function that changes the image forward
-        // * make sure it resets to the beginning of the images
-        function changeImageNext(event){
-
-            for (i = 0; i < articles.length; i++){
-                // console.log(articles[i]+ " " + i);
-                activeArticle = articles[i + 1];
-                
+            if (currentImage < 5 && currentImage > -1){
+                // inserts the updated html into the html file
+                gallerySection.querySelector('article').innerHTML = templateArray[currentImage];
             }
-        }
 
-        // THIS PROBABLY WONT WORK
-        // add a function that changes the image backward
-        // * make sure it resets to the end of the images
-        function changeImagePrev(event){
+            currentImage--;
 
-            for (i = articles.length - 1; i < articles.length; i--){
-                // console.log(articles[i]+ " " + i);
-                activeArticle = articles[i - 1];
-                
-            }
-        }
+        });
+
+
+
    }
 
 
