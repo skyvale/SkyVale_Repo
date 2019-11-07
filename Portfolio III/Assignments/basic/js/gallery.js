@@ -64,30 +64,38 @@ xhr.onload = function(){
         htmlTemplate();
 
         // set the current image
-        let getImage = 1;
+        let getImage = 0;
 
         // when the user clicks the next button, it will go to the next image
         nextButton.addEventListener("click", function changeImageNext(){
             //console.log("clicked next");
-            if (getImage < 5 && getImage > -1){
+            if (getImage < templateArray.length && getImage > -1){
                 // inserts the updated html into the html file
-                console.log(getImage);
-                gallerySection.querySelector('article').innerHTML = templateArray[getImage];
-                if (getImage != 4){
+                if (getImage < templateArray.length - 1){
                     getImage++;
+                    gallerySection.querySelector('article').innerHTML = templateArray[getImage];
+                    console.log(getImage);
+                }              
+                else {
+                    getImage = 0;
+                    gallerySection.querySelector('article').innerHTML = templateArray[getImage];
                 }
             }
         });
 
         // when the user clicks the back button, it will go back an image
         prevButton.addEventListener("click", function changeImagePrev(){
-            //console.log("clicked prev");
-            if (getImage < 5 && getImage > -1){
+            console.log("clicked prev");
+            if (getImage < templateArray.length && getImage > -1){
                 // inserts the updated html into the html file
-                console.log(getImage);
-                gallerySection.querySelector('article').innerHTML = templateArray[getImage];
-                if (getImage != 0){
+                if (getImage > 0 && getImage < 5){
                     getImage--;
+                    gallerySection.querySelector('article').innerHTML = templateArray[getImage];
+                    console.log(getImage);
+                }
+                else {
+                    getImage = 4;
+                    gallerySection.querySelector('article').innerHTML = templateArray[getImage];
                 }
             }
         });
