@@ -1,6 +1,5 @@
 // !! TODO
-// Get the images to change when buttons are clicked:
-//      - try looping through the htmlTemplate when the buttons are clicked
+// For some reason, the currentImage value is incorrectly incrementing
 
 
 // use Ajax to load the JSON file
@@ -65,29 +64,32 @@ xhr.onload = function(){
         htmlTemplate();
 
         // set the current image
-        let currentImage = 0;
+        let getImage = 1;
 
         // when the user clicks the next button, it will go to the next image
         nextButton.addEventListener("click", function changeImageNext(){
-
-            if (currentImage < 5 && currentImage > -1){
+            //console.log("clicked next");
+            if (getImage < 5 && getImage > -1){
                 // inserts the updated html into the html file
-                gallerySection.querySelector('article').innerHTML = templateArray[currentImage];
+                console.log(getImage);
+                gallerySection.querySelector('article').innerHTML = templateArray[getImage];
+                if (getImage != 4){
+                    getImage++;
+                }
             }
-
-            currentImage++;
         });
 
         // when the user clicks the back button, it will go back an image
         prevButton.addEventListener("click", function changeImagePrev(){
-
-            if (currentImage < 5 && currentImage > -1){
+            //console.log("clicked prev");
+            if (getImage < 5 && getImage > -1){
                 // inserts the updated html into the html file
-                gallerySection.querySelector('article').innerHTML = templateArray[currentImage];
+                console.log(getImage);
+                gallerySection.querySelector('article').innerHTML = templateArray[getImage];
+                if (getImage != 0){
+                    getImage--;
+                }
             }
-
-            currentImage--;
-
         });
 
 
