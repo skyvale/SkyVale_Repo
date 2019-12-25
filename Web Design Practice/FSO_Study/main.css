@@ -1,0 +1,21 @@
+/* =========================== | FSO CSS | =========================== */
+/* ----------------------------------------------------------------------------- */
+
+html {
+	font-size: 62.5%;
+}
+
+/* wrapper for the content */
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* default settings */
+body {
+    background-color: #161515;
+    color: #888888;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}

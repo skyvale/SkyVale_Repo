@@ -1,0 +1,60 @@
+/* CSS RESET
+================================================== 
+================================================== */
+
+html, body, div, main, span, 
+h1, h2, h3, h4, h5, h6, p, blockquote,
+a, button, img, s,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, input, textarea,
+table, tr, th, td,
+article, header, nav, section, 
+::before, ::after {
+
+	margin: 0; 
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+	
+	box-sizing: border-box;
+	
+}
+
+/* HTML5 - Older browser support
+================================================== */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+/* BODY
+================================================== */
+body { line-height: 1; }
+
+
+/* LISTS - Clear bullets
+================================================== */
+ol, ul { list-style: none; }
+
+
+/* QUOTES
+================================================== */
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* TABLES
+================================================== */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
